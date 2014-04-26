@@ -1,0 +1,53 @@
+- title:     Music Drop
+  company_label:   Left Field Labs'
+  url:       http://musicdrop.leftfieldlabs.com/
+  image_url: /images/projects/musicdrop_screen.jpg
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
+  - title: AngularJS
+  - title: Express
+  - title: Design
+- title:     Intel for Change
+  company_label:   Participant Media's
+  url:       http://intel-for-change-demo.herokuapp.com
+  image_url: /images/projects/intelforchange_screen.jpg
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
+- title:     Google Fiber
+  company_label:   Google's
+  url:       https://fiber.google.com/about/
+  image_url: /images/projects/googlefiber_screen.jpg
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
+- title:     Google Web Designer
+  company_label:   Google's
+  url:       https://www.google.com/webdesigner/
+  image_url: /images/projects/googlewebdesigner_screen.jpg
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
+- title:     DP Portfolio
+  company_label:   Patrick Lawler's
+  url:       http://patricklawler.com
+  image_url: /images/projects/patricklawler_screen.jpg
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
+  - title: Design
+  - title: PHP
+- title:     Tastemakers Campaign
+  company_label:   Participant Media's
+  url:       http://www.takepart.com/tastemakers
+  image_url: /images/projects/tastemakers_screen.jpg
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript

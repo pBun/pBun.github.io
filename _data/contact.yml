@@ -1,0 +1,36 @@
+- name: resume
+  label: Resume
+  url: /files/resume.pdf
+  image_url: /images/social/github-64.png
+- name: github
+  label: Github
+  url: http://github.com/pBun
+  image_url: /images/social/github-64.png
+- name: codepen
+  label: Codepen
+  url: http://codepen.io/pBun
+  image_url: /images/social/codepen-64.png
+- name: linkedin
+  label: LinkedIn
+  url: http://www.linkedin.com/profile/view?id=111651898
+  image_url: /images/social/linkedin-64.png
+# - name: soundcloud
+#   label: Soundcloud
+#   url: http://soundcloud.com/pBun
+#   image_url: /images/social/soundcloud-64.png
+# - name: facebook
+#   label: Facebook
+#   url: http://facebook.com/peebun
+#   image_url: /images/social/facebook-64.png
+# - name: twitter
+#   label: Twitter
+#   url: http://twitter.com/p33bun
+#   image_url: /images/social/twitter-64.png
+# - name: instagram
+#   label: Instagram
+#   url: http://instagram.com/p33bun/
+#   image_url: /images/social/instagram-64.png
+# - name: googleplus
+#   label: Google+
+#   url: https://plus.google.com/108521897138526123986
+#   image_url: /images/social/googleplus-64.png

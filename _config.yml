@@ -1,0 +1,12 @@
+name: pBun.github.io
+description: dustin boersma | front-end web developer
+author:
+  name: Dustin Boersma
+  email: dustin.boersma@gmail.com
+
+exclude: ['_source']
+include: ['.htaccess']
+markdown: redcarpet
+pygments: true
+safe: true
+lsi: false

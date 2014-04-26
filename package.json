@@ -1,0 +1,34 @@
+{
+  "name": "pBun.github.io",
+  "version": "0.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pBun/pBun.github.io.git"
+  },
+  "keywords": [
+    "web developer",
+    "dustin boersma",
+    "portfolio"
+  ],
+  "author": "Dustin Boersma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pBun/pBun.github.io/issues"
+  },
+  "homepage": "https://pBun.github.io",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-concat": "^2.2.0",
+    "gulp-uglify": "^0.2.1",
+    "gulp-ruby-sass": "^0.4.3",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-minify-css": "^0.3.1",
+    "gulp-nodemon": "^1.0.2",
+    "tiny-lr": "0.0.5",
+    "gulp-livereload": "^1.3.1",
+    "gulp-imagemin": "^0.2.0",
+    "gulp-cache": "^0.1.3",
+    "bower": "^1.3.3"
+  }
+}

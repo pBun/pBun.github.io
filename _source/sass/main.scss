@@ -1,0 +1,377 @@
+@import "normalize";
+@import "mixins";
+@import "fluid-grid";
+@import "fonts";
+@import "syntax";
+
+/* # Global
+================================================== */
+$main-color: #333333;
+$link-color: #145B7F;
+$tertiary-color: rgb(241, 202, 126);
+$main-font: 'OpenSans', sans-serif;
+$secondary-font: 'SourceSansPro', sans-serif;
+
+$background-color: darken(rgb(255, 255, 255), 6%);
+
+body {
+  font-family: $main-font;
+  color: $main-color;
+  font-size: 15px;
+  line-height: 150%;
+  background: $background-color;
+  overflow-y: scroll;
+  margin-bottom: 3%;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  line-height: 110%;
+  text-rendering: optimizelegibility;
+  margin: 10px 0;
+  font-weight: 300;
+}
+h1 {
+  @media (max-width: 860px) {
+    font-size: 22.5px;
+  }
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  margin: 10px 0;
+}
+a{
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  word-wrap: break-word;
+  transition:
+    border 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    border-bottom: 1px solid $link-color;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+ul, ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+
+.site-container {
+  padding: 0 0 0 0;
+}
+
+.site-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.link-icon {
+  font-size: 14px;
+  margin-left:-1.1em;
+  margin-top:1.3em;
+  width: 0.5em;
+  height: 1em;
+  border: 0.250em solid #2c2c2c;
+  border-bottom-left-radius: 1em 1em;
+  border-bottom-right-radius: 1em 1em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  bottom: 0.188em;
+  border-top: solid 0em transparent;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.link-icon:before {
+  content: '';
+  display: block;
+  width: 0.5em;
+  top: -1.4em;
+  left: -0.23em;
+  height: 1em;
+  border: 0.250em solid #2c2c2c;
+  border-bottom-left-radius: 1em 1em;
+  border-bottom-right-radius: 1em 1em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  bottom: 0.188em;
+  border-top: solid 0em transparent;
+  position: absolute;
+
+  transform: rotate(180deg);
+}
+
+.link-icon:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0.2em;
+  top: -0.6em;
+  left: 0.13em;
+  height: 1em;
+  border-radius: 1em;
+  background: #2C2C2C;
+  transform: rotate(180deg);
+}
+
+/* # Global Header
+================================================== */
+.site-header {
+  font-family: $secondary-font;
+  background: #fcfcfc;
+  border-bottom: 1px solid #d7d7d7;
+  font-size: 13px;
+  padding: 0.618em 0 0.2em;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin-bottom: 2em;
+  a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    line-height: 120%;
+    border: 0;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    &:hover, &:active, &:focus {
+      color: #39c;
+    }
+  }
+  .site-logo {
+    display: inline-block;
+  }
+  .site-nav {
+    float:  right;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    li {
+      display: inline-block;
+      margin-left: 1.5em;
+    }
+  }
+}
+
+/* # Tiles (General)
+================================================== */
+.tile {
+  padding: 14px;
+  h2, h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  &:hover, &:active, &:focus {
+    border-color: transparent;
+  }
+}
+
+/* # Home
+================================================== */
+#intro {
+  font-family: $secondary-font;
+  padding: 3% 0 2% 0;
+  height: auto;
+  min-height: 0;
+  color: $main-color;
+  h1 {
+    font-size: 36px;
+  }
+}
+.grid-top {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+/* # Work area
+================================================== */
+
+#work {
+  z-index: 999;
+}
+
+/* work area tiles */
+.work-content {
+  line-height: 20px;
+  position: relative;
+  background: #39c;
+  color: #f0f0f0;
+  height: 20em;
+  min-height: 20em;
+  .image-wrapper {
+    max-height: 170px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid darken(#39c, 5%);
+    position: relative;
+    text-align: center;
+    transition: border-color 0.3s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    &:after {
+      transition: opacity 0.3s ease-in-out;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: transparent;
+      background: rgba(0,0,0,0.5);
+      content: 'visit site';
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      line-height: 170px;
+      vertical-align: middle;
+      width: 100%;
+      box-sizing: border-box;
+      opacity: 0;
+    }
+  }
+  &:hover {
+    background: darken(#39c, 20%);
+    .image-wrapper {
+      border-color: darken(#39c, 20%);
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  h2 {
+    span {
+      display: block;
+      opacity: 0.6;
+      font-size: 14px;
+    }
+  }
+}
+.work-content .details {
+  opacity: 0.9;
+  font-size: 14px;
+}
+@media all and (max-width: 500px) {
+  .work-content {
+    height: auto;
+    min-height: 0;
+  }
+}
+
+/* # Blog
+================================================== */
+#tumblr_controls {
+  top: auto;
+  bottom: 0;
+}
+.blog .tile {
+  padding: 2.618em 0;
+  blockquote {
+    padding: 0 0 0 15px;
+    margin: 0 0 20px;
+    border-left: 5px solid #d7d7d7;
+  }
+  .tile-meta {
+    display: block;
+    vertical-align: top;
+    text-transform: lowercase;
+    &>div {
+      display: inline-block;
+      margin: 0 10px 0 0;
+    }
+  }
+  .tile-meta, .tile-meta a {
+    color: lighten($main-color, 40%);
+    &:hover, &:active, &:focus {
+      border-color: transparent;
+    }
+  }
+  .tile-content {
+    display: inline-block;
+    width: 89%;
+    h2 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: bold;
+      a {
+        &:hover, &:active, &:focus {
+          border-color: transparent;
+        }
+      }
+    }
+    .media {
+      float: left;
+      margin-right: 20px;
+    }
+    .tags a {
+      margin: 0 3px 3px 0;
+      padding: 0 7px;
+      display: inline-block;
+      background: #bebebe;
+      color: #fff;
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 3px;
+      &:hover, &:active, &:focus {
+        border-color: transparent;
+        color: rgb(255, 255, 255);
+        background: $link-color;
+      }
+    }
+  }
+  #navigation {
+    a {
+      margin-right: 50px;
+    }
+  }
+}
+
+/* # Animations
+================================================== */
+@-webkit-keyframes slidein {
+  from {opacity: 0; @include vendorize(transform, translate(-100%)); background: transparent;}
+  to {opacity: 1;}
+}
+@-o-keyframes slidein {
+  from {opacity: 0; @include vendorize(transform, translate(-100%));}
+  to {opacity: 1;}
+}
+@keyframes slidein {
+  from {opacity: 0; @include vendorize(transform, translate(-100%));}
+  to {opacity: 1;}
+}
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+#intro, #work, #contact {
+  opacity:0;
+  @include vendorize(animation, fadeIn 1.0s ease-in 1 forwards );
+}
+#intro {
+  @include vendorize(animation-delay, 0.3s);
+}
+#work {
+  @include vendorize(animation-delay, 0.6s);
+}
+#contact {
+  @include vendorize(animation-delay, 0.9s);
+}
+.slidein.animate {
+  @include vendorize(animation, slidein 1.0s ease-out);
+}
