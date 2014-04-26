@@ -3,13 +3,10 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Dustin Boersma -- @p33bun
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    Normalize, jQuery, Modernizr
+    Jekyll, Gulp, Sass
