@@ -17,10 +17,10 @@
   - title: HTML
   - title: CSS
   - title: JavaScript
-- title:     Google Fiber
+- title:     Google Glass
   company_label:   Google's
-  url:       https://fiber.google.com/about/
-  image_url: /images/projects/googlefiber_screen.jpg
+  url:       https://glass.google.com
+  image_url: /images/projects/googleglass_screen.jpg
   roles:
   - title: HTML
   - title: CSS
