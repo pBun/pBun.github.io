@@ -1,5 +1,4 @@
 @import "normalize";
-@import "mixins";
 @import "fluid-grid";
 @import "fonts";
 @import "syntax";
@@ -223,8 +222,11 @@ ul, ol {
     position: relative;
     text-align: center;
     transition: border-color 0.3s ease-in-out;
+    perspective: 1000;
     -webkit-backface-visibility: hidden;
     &:after {
+      perspective: 1000;
+      -webkit-backface-visibility: hidden;
       transition: opacity 0.3s ease-in-out;
       display: block;
       position: absolute;
@@ -343,35 +345,25 @@ ul, ol {
 
 /* # Animations
 ================================================== */
-@-webkit-keyframes slidein {
-  from {opacity: 0; @include vendorize(transform, translate(-100%)); background: transparent;}
-  to {opacity: 1;}
-}
-@-o-keyframes slidein {
-  from {opacity: 0; @include vendorize(transform, translate(-100%));}
-  to {opacity: 1;}
-}
 @keyframes slidein {
-  from {opacity: 0; @include vendorize(transform, translate(-100%));}
+  from {opacity: 0; transform: translate(-100%);}
   to {opacity: 1;}
 }
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 #intro, #work, #contact {
   opacity:0;
-  @include vendorize(animation, fadeIn 1.0s ease-in 1 forwards );
+  animation: fadeIn 1.0s ease-in 1 forwards;
 }
 #intro {
-  @include vendorize(animation-delay, 0.3s);
+  animation-delay: 0.3s;
 }
 #work {
-  @include vendorize(animation-delay, 0.6s);
+  animation-delay: 0.6s;
 }
 #contact {
-  @include vendorize(animation-delay, 0.9s);
+  animation-delay: 0.9s;
 }
 .slidein.animate {
-  @include vendorize(animation, slidein 1.0s ease-out);
+  animation: slidein 1.0s ease-out;
 }
