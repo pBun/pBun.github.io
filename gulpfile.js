@@ -66,7 +66,7 @@ gulp.task('watch', function() {
   server.listen(35729, function (err) {
     if (err) return console.log(err);
     gulp.watch(paths.js, ['js']);
-    gulp.watch(paths.iamges, ['images']);
+    gulp.watch(paths.images, ['images']);
     gulp.watch(paths.sass, ['sass']);
   });
 });
