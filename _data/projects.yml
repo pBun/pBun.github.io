@@ -5,7 +5,6 @@
   roles:
   - title: HTML
   - title: CSS
-  - title: JavaScript
   - title: AngularJS
   - title: Express
   - title: Design
@@ -42,7 +41,7 @@
   - title: CSS
   - title: JavaScript
   - title: Design
-  - title: PHP
+  - title: Jekyll
 - title:     Tastemakers Campaign
   company_label:   Participant Media's
   url:       http://www.takepart.com/tastemakers
