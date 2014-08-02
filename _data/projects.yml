@@ -1,3 +1,13 @@
+- title:     Google Cloud Platform
+  company_label:   Google's
+  url:       https://cloud.google.com
+  image_url: /images/projects/googlecloud_screen.jpg
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
+  - title: AngularJS
+  - title: Python
 - title:     Music Drop
   company_label:   Left Field Labs'
   url:       http://musicdrop.leftfieldlabs.com/
@@ -43,11 +53,3 @@
   - title: JavaScript
   - title: Design
   - title: PHP
-- title:     Tastemakers Campaign
-  company_label:   Participant Media's
-  url:       http://www.takepart.com/tastemakers
-  image_url: /images/projects/tastemakers_screen.jpg
-  roles:
-  - title: HTML
-  - title: CSS
-  - title: JavaScript

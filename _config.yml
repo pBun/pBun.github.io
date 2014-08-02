@@ -7,6 +7,6 @@ author:
 exclude: ['_source']
 include: ['.htaccess']
 markdown: redcarpet
-pygments: true
+highlighter: true
 safe: true
 lsi: false
