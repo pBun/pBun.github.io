@@ -51,9 +51,9 @@ a{
   border-bottom: 1px solid transparent;
   word-wrap: break-word;
   transition:
-    border 0.3s ease-in-out,
-    color 0.3s ease-in-out,
-    background-color 0.3s ease-in-out;
+    border 0.3s ease-out,
+    color 0.3s ease-out,
+    background-color 0.3s ease-out;
   &:hover, &:active, &:focus {
     text-decoration: none;
     border-bottom: 1px solid $link-color;
@@ -221,13 +221,13 @@ ul, ol {
     border: 1px solid darken(#39c, 5%);
     position: relative;
     text-align: center;
-    transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-out;
     perspective: 1000;
     -webkit-backface-visibility: hidden;
     &:after {
       perspective: 1000;
       -webkit-backface-visibility: hidden;
-      transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-out;
       display: block;
       position: absolute;
       top: 0;
@@ -353,7 +353,7 @@ ul, ol {
 
 #intro, #work, #contact {
   opacity:0;
-  animation: fadeIn 1.0s ease-in 1 forwards;
+  animation: fadeIn 1.0s ease-out 1 forwards;
 }
 #intro {
   animation-delay: 0.3s;
