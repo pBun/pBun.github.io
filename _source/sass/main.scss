@@ -363,12 +363,12 @@ ul, ol {
 #contact {
   animation-delay: 0.9s;
 }
-.slidein {
+.slide-in {
   transition: all 1.0s ease-out;
   transform: translate(-100%);
   opacity: 0;
 }
-.slidein.animate {
+.slide-in.animate {
   opacity: 1;
   transform: translate(0);
 }
