@@ -365,10 +365,10 @@ ul, ol {
 }
 .slide-in {
   transition: all 0.8s ease-out;
-  transform: translate(-100%);
+  // transform: translate(-100%);
   opacity: 0;
 }
 .slide-in.animate {
   opacity: 1;
-  transform: translate(0);
+  // transform: translate(0);
 }
