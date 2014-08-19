@@ -345,10 +345,6 @@ ul, ol {
 
 /* # Animations
 ================================================== */
-@keyframes slidein {
-  from {opacity: 0; transform: translate(-100%);}
-  to {opacity: 1;}
-}
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 .blog .post {
   perspective: 1000;
@@ -367,6 +363,12 @@ ul, ol {
 #contact {
   animation-delay: 0.9s;
 }
+.slidein {
+  transition: all 1.0s ease-out;
+  transform: translate(-100%);
+  opacity: 0;
+}
 .slidein.animate {
-  animation: slidein 1.0s ease-out;
+  opacity: 1;
+  transform: translate(0);
 }
