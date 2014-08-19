@@ -5,6 +5,6 @@
   $.each(waterfallElements, function (i, element) {
     setTimeout(function () {
       $(element).addClass('animate');
-    }, (i * 300) + 100);
+    }, (i * 300) + 500);
   });
 }());
