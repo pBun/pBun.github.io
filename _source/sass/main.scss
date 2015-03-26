@@ -322,7 +322,7 @@ ul, ol {
     }
     .tags a {
       margin: 0 3px 3px 0;
-      padding: 0 7px;
+      padding: 0.5em 0.75em;
       display: inline-block;
       background: #bebebe;
       color: #fff;
@@ -352,7 +352,7 @@ ul, ol {
   -webkit-backface-visibility: hidden;
 }
 #intro, #work, #contact {
-  opacity:0;
+  opacity: 0;
   animation: fadeIn 1.0s ease-out 1 forwards;
 }
 #intro {
