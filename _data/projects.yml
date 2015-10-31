@@ -1,3 +1,11 @@
+- title:     Destiny
+  company_label:   Activision's
+  url:       https://www.destinythegame.com/
+  image_url: /images/projects/destiny_screen.jpg
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
 - title:     Google Cloud Platform
   company_label:   Google's
   url:       https://cloud.google.com
@@ -27,14 +35,14 @@
   - title: HTML
   - title: CSS
   - title: JavaScript
-- title:     Google Glass
-  company_label:   Google's
-  url:       https://glass.google.com
-  image_url: /images/projects/googleglass_screen.jpg
-  roles:
-  - title: HTML
-  - title: CSS
-  - title: JavaScript
+# - title:     Google Glass
+#   company_label:   Google's
+#   url:       https://glass.google.com
+#   image_url: /images/projects/googleglass_screen.jpg
+#   roles:
+#   - title: HTML
+#   - title: CSS
+#   - title: JavaScript
 - title:     Google Web Designer
   company_label:   Google's
   url:       https://www.google.com/webdesigner/
