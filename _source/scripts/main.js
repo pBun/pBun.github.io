@@ -7,4 +7,7 @@
       $(element).addClass('animate');
     }, i * 300);
   });
+  $('a').on('click', function() {
+    $(this).blur();
+  });
 }());
