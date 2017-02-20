@@ -1,21 +1,19 @@
-- title:     Destiny
-  company_label:   Activision's
-  url:       https://www.destinythegame.com/rise-of-iron
-  image_url: /images/projects/destiny_screen.jpg
+- title:     "The Legend of You"
+  company_label:   Activision Destiny's
+  url:       https://dtg-legend.herokuapp.com/
+  image_url: /images/projects/dtg_legend_screen.jpg
   roles:
   - title: HTML
   - title: CSS
   - title: JavaScript
-- title:     Google Cloud Platform
-  company_label:   Google's
-  url:       https://cloud.google.com
-  image_url: /images/projects/googlecloud_screen.jpg
+- title:     Battlecast Card Creator
+  company_label:   Activision Skylanders'
+  url:       https://battlecast-card.herokuapp.com/
+  image_url: /images/projects/battlecast_card_screen.jpg
   roles:
   - title: HTML
   - title: CSS
   - title: JavaScript
-  - title: AngularJS
-  - title: Python
 - title:     Music Drop
   company_label:   Left Field Labs'
   url:       http://musicdrop.leftfieldlabs.com/
@@ -35,14 +33,6 @@
   - title: HTML
   - title: CSS
   - title: JavaScript
-# - title:     Google Glass
-#   company_label:   Google's
-#   url:       https://glass.google.com
-#   image_url: /images/projects/googleglass_screen.jpg
-#   roles:
-#   - title: HTML
-#   - title: CSS
-#   - title: JavaScript
 - title:     Google Web Designer
   company_label:   Google's
   url:       https://www.google.com/webdesigner/
