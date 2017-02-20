@@ -4,11 +4,7 @@ var gutil = require('gulp-util');
 var open = require('open');
 
 gulp.task('jekyll', function(cb) {
-  var jekyll = child.spawn('jekyll', ['serve',
-    '--watch',
-    '--incremental',
-    '--drafts'
-  ]);
+  var jekyll = child.spawn('jekyll', ['serve']);
 
   var jekyllLogger = function(buffer) {
     buffer.toString()
