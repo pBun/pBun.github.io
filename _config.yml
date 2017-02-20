@@ -7,6 +7,6 @@ author:
 exclude: ['_source', 'package.json', 'node_modules', 'gulpfile.js']
 include: ['.htaccess']
 markdown: redcarpet
-highlighter: true
+highlighter: 'rogue'
 safe: true
 lsi: false
