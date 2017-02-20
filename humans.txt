@@ -7,6 +7,4 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    Normalize, jQuery, Modernizr
-    Jekyll, Gulp, Sass
+    Normalize, Jekyll, Gulp, Stylus
