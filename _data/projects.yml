@@ -9,7 +9,7 @@
   - title: Vue + Vuex
 - title:     "The Legend of You"
   company_label:   Activision Destiny's
-  url:       https://dtg-legend.herokuapp.com/
+  url:       http://projects.dustinboersma.com/dtg-legend
   image_url: /images/projects/dtg_legend_screen.jpg
   roles:
   - title: HTML
@@ -17,7 +17,7 @@
   - title: JavaScript
 - title:     Battlecast Card Creator
   company_label:   Activision Skylanders'
-  url:       https://battlecast-card.herokuapp.com/
+  url:       http://projects.dustinboersma.com/battlecast-card
   image_url: /images/projects/battlecast_card_screen.jpg
   roles:
   - title: HTML
