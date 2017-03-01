@@ -36,7 +36,7 @@
 #   - title: Design
 - title:     Intel for Change
   company_label:   Participant Media's
-  url:       http://intel-for-change-demo.herokuapp.com
+  url:       http://projects.dustinboersma.com/intel-for-change
   image_url: /images/projects/intelforchange_screen.jpg
   roles:
   - title: HTML
