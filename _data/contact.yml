@@ -1,6 +1,6 @@
 - name: resume
   label: Resume
-  url: /files/resume.pdf
+  url: https://dl.dropboxusercontent.com/u/62120331/portfolio/files/resume.pdf
   image_url: /images/social/github-64.png
 - name: github
   label: Github

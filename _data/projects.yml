@@ -1,7 +1,7 @@
 - title:     "My Call of Duty"
   company_label:   Activision's
   url:       https://my.callofduty.com/
-  image_url: /images/projects/my_cod_screen.jpg
+  image_url: https://dl.dropboxusercontent.com/u/62120331/portfolio/images/projects/my_cod_screen.jpg
   roles:
   - title: HTML
   - title: CSS
@@ -10,7 +10,7 @@
 - title:     "The Legend of You"
   company_label:   Activision Destiny's
   url:       http://projects.dustinboersma.com/dtg-legend
-  image_url: /images/projects/dtg_legend_screen.jpg
+  image_url: https://dl.dropboxusercontent.com/u/62120331/portfolio/images/projects/dtg_legend_screen.jpg
   roles:
   - title: HTML
   - title: CSS
@@ -18,7 +18,7 @@
 - title:     Battlecast Card Creator
   company_label:   Activision Skylanders'
   url:       http://projects.dustinboersma.com/battlecast-card
-  image_url: /images/projects/battlecast_card_screen.jpg
+  image_url: https://dl.dropboxusercontent.com/u/62120331/portfolio/images/projects/battlecast_card_screen.jpg
   roles:
   - title: HTML
   - title: CSS
@@ -26,7 +26,7 @@
 # - title:     Music Drop
 #   company_label:   Left Field Labs'
 #   url:       http://musicdrop.leftfieldlabs.com/
-#   image_url: /images/projects/musicdrop_screen.jpg
+#   image_url: https://dl.dropboxusercontent.com/u/62120331/portfolio/images/projects/musicdrop_screen.jpg
 #   roles:
 #   - title: HTML
 #   - title: CSS
@@ -37,7 +37,7 @@
 - title:     Intel for Change
   company_label:   Participant Media's
   url:       http://projects.dustinboersma.com/intel-for-change
-  image_url: /images/projects/intelforchange_screen.jpg
+  image_url: https://dl.dropboxusercontent.com/u/62120331/portfolio/images/projects/intelforchange_screen.jpg
   roles:
   - title: HTML
   - title: CSS
@@ -45,7 +45,7 @@
 - title:     Google Web Designer
   company_label:   Google's
   url:       https://www.google.com/webdesigner/
-  image_url: /images/projects/googlewebdesigner_screen.jpg
+  image_url: https://dl.dropboxusercontent.com/u/62120331/portfolio/images/projects/googlewebdesigner_screen.jpg
   roles:
   - title: HTML
   - title: CSS
@@ -53,7 +53,7 @@
 - title:     DP Portfolio
   company_label:   Patrick Lawler's
   url:       http://patricklawler.com
-  image_url: /images/projects/patricklawler_screen.jpg
+  image_url: https://dl.dropboxusercontent.com/u/62120331/portfolio/images/projects/patricklawler_screen.jpg
   roles:
   - title: HTML
   - title: CSS
