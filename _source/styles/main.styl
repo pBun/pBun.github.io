@@ -223,116 +223,68 @@ ul, ol {
 
 /* # Blog
 ================================================== */
-.link-icon {
-  font-size: 14px;
-  margin-left:-1.1em;
-  margin-top:1.3em;
-  width: 0.5em;
-  height: 1em;
-  border: 0.250em solid #2c2c2c;
-  border-bottom-left-radius: 1em 1em;
-  border-bottom-right-radius: 1em 1em;
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
-  bottom: 0.188em;
-  border-top: solid 0em transparent;
-  position: relative;
-  transform: rotate(45deg);
+.tmblr-iframe {
+  top: auto !important;
+  bottom: 0 !important;
 }
-
-.link-icon:before {
-  content: '';
-  display: block;
-  width: 0.5em;
-  top: -1.4em;
-  left: -0.23em;
-  height: 1em;
-  border: 0.250em solid #2c2c2c;
-  border-bottom-left-radius: 1em 1em;
-  border-bottom-right-radius: 1em 1em;
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
-  bottom: 0.188em;
-  border-top: solid 0em transparent;
-  position: absolute;
-
-  transform: rotate(180deg);
-}
-
-.link-icon:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 0.2em;
-  top: -0.6em;
-  left: 0.13em;
-  height: 1em;
-  border-radius: 1em;
-  background: #2C2C2C;
-  transform: rotate(180deg);
-}
-
-#tumblr_controls {
-  top: auto;
-  bottom: 0;
-}
-.blog .tile {
+.blog-post {
   padding: 2.618em 0;
   blockquote {
     padding: 0 0 0 15px;
     margin: 0 0 20px;
     border-left: 5px solid #d7d7d7;
   }
-  .tile-meta {
+  .post-meta-container {
     display: block;
     vertical-align: top;
     text-transform: lowercase;
-    &>div {
+    .post-meta {
       display: inline-block;
       margin: 0 10px 0 0;
     }
   }
-  .tile-meta, .tile-meta a {
+  .post-meta-container,
+  .post-meta-container a {
     color: lighten($main-color, 40%);
     &:hover, &:active, &:focus {
       border-color: transparent;
     }
   }
-  .tile-content {
+  .post-inner {
     display: inline-block;
     width: 89%;
-    h2 {
-      margin: 0;
-      font-size: 28px;
-      font-weight: bold;
-      a {
-        &:hover, &:active, &:focus {
-          border-color: transparent;
-        }
-      }
-    }
-    .media {
-      float: left;
-      margin-right: 20px;
-    }
-    .tags a {
-      margin: 0 3px 3px 0;
-      padding: 0.5em 0.75em;
-      display: inline-block;
-      background: #bebebe;
-      color: #fff;
-      font-size: 10px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      border-radius: 3px;
+  }
+  .post-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    a {
       &:hover, &:active, &:focus {
         border-color: transparent;
-        color: rgb(255, 255, 255);
-        background: $accent-color;
       }
     }
   }
-  #navigation {
+  .post-tag {
+    margin: 0 3px 3px 0;
+    padding: 0.5em 0.75em;
+    display: inline-block;
+    background: #bebebe;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    &:hover, &:active, &:focus {
+      border-color: transparent;
+      color: rgb(255, 255, 255);
+      background: $accent-color;
+    }
+  }
+  .post-media {
+    float: left;
+    margin-right: 20px;
+  }
+  .navigation-container {
     a {
       margin-right: 50px;
     }
@@ -342,24 +294,10 @@ ul, ol {
 /* # Animations
 ================================================== */
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-.blog .post {
-  perspective: 1000;
-  -webkit-backface-visibility: hidden;
-}
 .waterfall {
   perspective: 1000;
   -webkit-backface-visibility: hidden;
 }
 .waterfall.animate {
   animation: fadeIn 1.0s ease-out 1 forwards;
-}
-
-.slide-in {
-  transition: all 0.8s ease-out;
-  // transform: translate(-100%);
-  opacity: 0;
-}
-.slide-in.animate {
-  opacity: 1;
-  // transform: translate(0);
 }

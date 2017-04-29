@@ -469,103 +469,54 @@ ol {
 }
 /* # Blog
 ================================================== */
-.link-icon {
-  font-size: 14px;
-  margin-left: -1.1em;
-  margin-top: 1.3em;
-  width: 0.5em;
-  height: 1em;
-  border: 0.25em solid #2c2c2c;
-  border-bottom-left-radius: 1em 1em;
-  border-bottom-right-radius: 1em 1em;
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
-  bottom: 0.188em;
-  border-top: solid 0em transparent;
-  position: relative;
-  transform: rotate(45deg);
+.tmblr-iframe {
+  top: auto !important;
+  bottom: 0 !important;
 }
-.link-icon:before {
-  content: '';
-  display: block;
-  width: 0.5em;
-  top: -1.4em;
-  left: -0.23em;
-  height: 1em;
-  border: 0.25em solid #2c2c2c;
-  border-bottom-left-radius: 1em 1em;
-  border-bottom-right-radius: 1em 1em;
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
-  bottom: 0.188em;
-  border-top: solid 0em transparent;
-  position: absolute;
-  transform: rotate(180deg);
-}
-.link-icon:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 0.2em;
-  top: -0.6em;
-  left: 0.13em;
-  height: 1em;
-  border-radius: 1em;
-  background: #2c2c2c;
-  transform: rotate(180deg);
-}
-#tumblr_controls {
-  top: auto;
-  bottom: 0;
-}
-.blog .tile {
+.blog-post {
   padding: 2.618em 0;
 }
-.blog .tile blockquote {
+.blog-post blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #d7d7d7;
 }
-.blog .tile .tile-meta {
+.blog-post .post-meta-container {
   display: block;
   vertical-align: top;
   text-transform: lowercase;
 }
-.blog .tile .tile-meta>div {
+.blog-post .post-meta-container .post-meta {
   display: inline-block;
   margin: 0 10px 0 0;
 }
-.blog .tile .tile-meta,
-.blog .tile .tile-meta a {
+.blog-post .post-meta-container,
+.blog-post .post-meta-container a {
   color: #858585;
 }
-.blog .tile .tile-meta:hover,
-.blog .tile .tile-meta a:hover,
-.blog .tile .tile-meta:active,
-.blog .tile .tile-meta a:active,
-.blog .tile .tile-meta:focus,
-.blog .tile .tile-meta a:focus {
+.blog-post .post-meta-container:hover,
+.blog-post .post-meta-container a:hover,
+.blog-post .post-meta-container:active,
+.blog-post .post-meta-container a:active,
+.blog-post .post-meta-container:focus,
+.blog-post .post-meta-container a:focus {
   border-color: transparent;
 }
-.blog .tile .tile-content {
+.blog-post .post-inner {
   display: inline-block;
   width: 89%;
 }
-.blog .tile .tile-content h2 {
+.blog-post .post-title {
   margin: 0;
   font-size: 28px;
   font-weight: bold;
 }
-.blog .tile .tile-content h2 a:hover,
-.blog .tile .tile-content h2 a:active,
-.blog .tile .tile-content h2 a:focus {
+.blog-post .post-title a:hover,
+.blog-post .post-title a:active,
+.blog-post .post-title a:focus {
   border-color: transparent;
 }
-.blog .tile .tile-content .media {
-  float: left;
-  margin-right: 20px;
-}
-.blog .tile .tile-content .tags a {
+.blog-post .post-tag {
   margin: 0 3px 3px 0;
   padding: 0.5em 0.75em;
   display: inline-block;
@@ -576,35 +527,28 @@ ol {
   text-transform: uppercase;
   border-radius: 3px;
 }
-.blog .tile .tile-content .tags a:hover,
-.blog .tile .tile-content .tags a:active,
-.blog .tile .tile-content .tags a:focus {
+.blog-post .post-tag:hover,
+.blog-post .post-tag:active,
+.blog-post .post-tag:focus {
   border-color: transparent;
   color: #fff;
   background: #145b7f;
 }
-.blog .tile #navigation a {
+.blog-post .post-media {
+  float: left;
+  margin-right: 20px;
+}
+.blog-post .navigation-container a {
   margin-right: 50px;
 }
 /* # Animations
 ================================================== */
-.blog .post {
-  perspective: 1000;
-  -webkit-backface-visibility: hidden;
-}
 .waterfall {
   perspective: 1000;
   -webkit-backface-visibility: hidden;
 }
 .waterfall.animate {
   animation: fadeIn 1s ease-out 1 forwards;
-}
-.slide-in {
-  transition: all 0.8s ease-out;
-  opacity: 0;
-}
-.slide-in.animate {
-  opacity: 1;
 }
 @keyframes fadeIn {
   from {
