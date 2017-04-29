@@ -3,9 +3,10 @@ var gulp = require('gulp');
 var child = require('child_process');
 var gutil = require('gulp-util');
 var open = require('open');
+var jekyllCmd = process.platform === "win32" ? "jekyll.bat" : "jekyll";
 
 gulp.task('jekyll:serve', function(cb) {
-  var jekyll = child.spawn('jekyll', ['serve']);
+  var jekyll = child.spawn(jekyllCmd, ['serve']);
 
   var checkIfSuccess = function(message) {
     if (message.indexOf('Server address:') >= 0) {

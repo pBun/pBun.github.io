@@ -17,6 +17,10 @@
     "url": "https://github.com/pBun/pBun.github.io/issues"
   },
   "homepage": "https://pBun.github.io",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "3.1.1",
