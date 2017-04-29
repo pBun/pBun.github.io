@@ -17,6 +17,7 @@ body {
   background: $background-color;
   font-weight: 400;
   letter-spacing: 0.01em;
+  overflow-y: scroll;
 }
 
 h1, h2, h3, h4 {
@@ -228,7 +229,7 @@ ul, ol {
   bottom: 0 !important;
 }
 .blog-post {
-  padding: 2.618em 0;
+  padding: 20px 0;
   blockquote {
     padding: 0 0 0 15px;
     margin: 0 0 20px;
@@ -238,17 +239,14 @@ ul, ol {
     display: block;
     vertical-align: top;
     text-transform: lowercase;
-    .post-meta {
-      display: inline-block;
-      margin: 0 10px 0 0;
-    }
   }
-  .post-meta-container,
-  .post-meta-container a {
-    color: lighten($main-color, 40%);
-    &:hover, &:active, &:focus {
-      border-color: transparent;
-    }
+  .post-meta {
+    display: inline-block;
+    margin: 0 1em 0 0;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
   }
   .post-inner {
     display: inline-block;
@@ -257,12 +255,7 @@ ul, ol {
   .post-title {
     margin: 0;
     font-size: 28px;
-    font-weight: bold;
-    a {
-      &:hover, &:active, &:focus {
-        border-color: transparent;
-      }
-    }
+    font-weight: 600;
   }
   .post-tag {
     margin: 0 3px 3px 0;
@@ -284,11 +277,12 @@ ul, ol {
     float: left;
     margin-right: 20px;
   }
-  .navigation-container {
-    a {
-      margin-right: 50px;
-    }
-  }
+}
+.blog-navigation {
+  margin-bottom: 80px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* # Animations

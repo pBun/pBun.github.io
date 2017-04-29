@@ -250,6 +250,7 @@ body {
   background: #f0f0f0;
   font-weight: 400;
   letter-spacing: 0.01em;
+  overflow-y: scroll;
 }
 h1,
 h2,
@@ -474,7 +475,7 @@ ol {
   bottom: 0 !important;
 }
 .blog-post {
-  padding: 2.618em 0;
+  padding: 20px 0;
 }
 .blog-post blockquote {
   padding: 0 0 0 15px;
@@ -486,21 +487,13 @@ ol {
   vertical-align: top;
   text-transform: lowercase;
 }
-.blog-post .post-meta-container .post-meta {
+.blog-post .post-meta {
   display: inline-block;
-  margin: 0 10px 0 0;
-}
-.blog-post .post-meta-container,
-.blog-post .post-meta-container a {
-  color: #858585;
-}
-.blog-post .post-meta-container:hover,
-.blog-post .post-meta-container a:hover,
-.blog-post .post-meta-container:active,
-.blog-post .post-meta-container a:active,
-.blog-post .post-meta-container:focus,
-.blog-post .post-meta-container a:focus {
-  border-color: transparent;
+  margin: 0 1em 0 0;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 .blog-post .post-inner {
   display: inline-block;
@@ -509,12 +502,7 @@ ol {
 .blog-post .post-title {
   margin: 0;
   font-size: 28px;
-  font-weight: bold;
-}
-.blog-post .post-title a:hover,
-.blog-post .post-title a:active,
-.blog-post .post-title a:focus {
-  border-color: transparent;
+  font-weight: 600;
 }
 .blog-post .post-tag {
   margin: 0 3px 3px 0;
@@ -538,8 +526,13 @@ ol {
   float: left;
   margin-right: 20px;
 }
-.blog-post .navigation-container a {
-  margin-right: 50px;
+.blog-navigation {
+  margin-bottom: 80px;
+  margin-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 /* # Animations
 ================================================== */
