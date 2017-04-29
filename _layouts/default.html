@@ -14,12 +14,10 @@
 
 <body>
 
-  <div class="container-fluid site-container">
-    {% include header.html %}
-    <main id="content">
-      {{ content }}
-    </main>
-  </div>
+  {% include header.html %}
+  <main class="main">
+    {{ content }}
+  </main>
 
   <script src="/scripts/all.min.js"></script>
   {% include googleanalytics.html %}

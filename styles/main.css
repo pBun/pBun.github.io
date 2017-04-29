@@ -240,165 +240,28 @@ template {
   font-weight: 600;
   font-style: italic;
 }
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-light-webfont.eot");
-  src: url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-light-webfont.eot?#iefix") format('embedded-opentype'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-light-webfont.woff") format('woff'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-light-webfont.ttf") format('truetype'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-light-webfont.svg#source_sans_prolight") format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-lightitalic-webfont.eot");
-  src: url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-lightitalic-webfont.eot?#iefix") format('embedded-opentype'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-lightitalic-webfont.woff") format('woff'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-lightitalic-webfont.ttf") format('truetype'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-lightitalic-webfont.svg#source_sans_prolight_italic") format('svg');
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-regular-webfont.eot");
-  src: url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-regular-webfont.eot?#iefix") format('embedded-opentype'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-regular-webfont.woff") format('woff'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-regular-webfont.ttf") format('truetype'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-regular-webfont.svg#source_sans_proregular") format('svg');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-italic-webfont.eot");
-  src: url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-italic-webfont.eot?#iefix") format('embedded-opentype'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-italic-webfont.woff") format('woff'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-italic-webfont.ttf") format('truetype'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-italic-webfont.svg#source_sans_proitalic") format('svg');
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-semibold-webfont.eot");
-  src: url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-semibold-webfont.eot?#iefix") format('embedded-opentype'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-semibold-webfont.woff") format('woff'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-semibold-webfont.ttf") format('truetype'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold") format('svg');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-semibolditalic-webfont.eot");
-  src: url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-semibolditalic-webfont.eot?#iefix") format('embedded-opentype'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-semibolditalic-webfont.woff") format('woff'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-semibolditalic-webfont.ttf") format('truetype'), url("https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/fonts/Source_Sans_Pro/sourcesanspro-semibolditalic-webfont.svg#source_sans_proSBdIt") format('svg');
-  font-weight: 600;
-  font-style: italic;
-}
-.container-12 {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  vertical-align: top;
-  box-sizing: border-box;
-  margin-left: -$gap;
-}
-.grid-1,
-.grid-2,
-.grid-3,
-.grid-4,
-.grid-5,
-.grid-6,
-.grid-7,
-.grid-8,
-.grid-9,
-.grid-10,
-.grid-11,
-.grid-12 {
-  display: inline;
-  float: left;
-  position: relative;
-  margin-left: 0.84%;
-  margin-bottom: 0.84%;
-  box-sizing: border-box;
-}
-.container-12 .grid-1 {
-  width: 7.493333333333332%;
-}
-.container-12 .grid-2 {
-  width: 15.826666666666664%;
-}
-.container-12 .grid-3 {
-  width: 24.16%;
-}
-.container-12 .grid-4 {
-  width: 32.493333333333325%;
-}
-.container-12 .grid-5 {
-  width: 40.82666666666667%;
-}
-.container-12 .grid-6 {
-  width: 49.16%;
-}
-.container-12 .grid-7 {
-  width: 57.49333333333333%;
-}
-.container-12 .grid-8 {
-  width: 65.82666666666665%;
-}
-.container-12 .grid-9 {
-  width: 74.16%;
-}
-.container-12 .grid-10 {
-  width: 82.49333333333334%;
-}
-.container-12 .grid-11 {
-  width: 90.82666666666665%;
-}
-.container-12 .grid-12 {
-  width: 99.16%;
-}
-@media all and (max-width: 900px) {
-  .container-12 .grid-3 {
-    width: 49.16%;
-  }
-  .container-12 .grid-4 {
-    width: 49.16%;
-  }
-}
-@media all and (max-width: 500px) {
-  .container-12 .grid-3 {
-    width: 99.16%;
-  }
-  .container-12 .grid-4 {
-    width: 99.16%;
-  }
-  .container-12 .grid-6 {
-    width: 99.16%;
-  }
-}
 /* # Global
 ================================================== */
 body {
   font-family: 'Open Sans', sans-serif;
   color: #333;
   font-size: 15px;
-  line-height: 150%;
+  line-height: 1.5em;
   background: #f0f0f0;
-  overflow-y: scroll;
-  margin-bottom: 3%;
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 h1,
 h2,
 h3,
 h4 {
   font-weight: normal;
-  line-height: 110%;
+  line-height: 1.1em;
   text-rendering: optimizelegibility;
-  margin: 10px 0;
-  font-weight: 300;
-}
-@media (max-width: 860px) {
-  h1 {
-    font-size: 22.5px;
-  }
-}
-h2 {
-  font-size: 20px;
-}
-h3 {
-  font-size: 20px;
+  margin: 0.33em 0;
 }
 p {
-  margin: 10px 0;
+  margin: 0 0 1em;
 }
 a {
   color: #145b7f;
@@ -407,17 +270,17 @@ a {
   word-wrap: break-word;
   transition: all 0.3s ease-out;
   display: inline-block;
-  line-height: 1em;
+  line-height: 1.1em;
 }
 a:hover,
 a:active,
 a:focus {
   outline: 0;
   text-decoration: none;
-  border-bottom: 1px solid #145b7f;
+  border-bottom-color: #145b7f;
   z-index: 2;
 }
-img {
+.image-wrapper img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
@@ -429,15 +292,183 @@ ol {
   padding: 0;
   margin: 0 0 10px 25px;
 }
-.site-container {
+.main {
   padding: 0 0 0 0;
 }
-.site-inner {
+.inner-wrapper {
   max-width: 980px;
   margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
+/* # Global Header
+================================================== */
+.site-header {
+  font-family: 'Open Sans', sans-serif;
+  background: #fcfcfc;
+  border-bottom: 1px solid #d7d7d7;
+  font-size: 13px;
+  padding: 0.618em 0 0.2em;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  margin-bottom: 2em;
+}
+.site-header a {
+  display: inline-block;
+  line-height: 1.2em;
+  border: 0;
+  color: rgba(0,0,0,0.75);
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.site-header .site-logo {
+  display: inline-block;
+}
+.site-header .site-nav {
+  float: right;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}
+.site-header .site-nav li {
+  display: inline-block;
+  margin-left: 1.5em;
+}
+/* # Intro Blurb
+================================================== */
+.intro-blurb {
+  font-size: 32px;
+  padding: 3% 0 2% 0;
+}
+/* # Contact Links
+================================================== */
+.contact-container {
+  text-align: right;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+/* # Project Tiles
+================================================== */
+.project-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 50px;
+  margin: 0 -5px;
+}
+.project {
+  box-sizing: border-box;
+  position: relative;
+  width: 33.333%;
+  padding: 0 5px 10px;
+}
+@media all and (max-width: 900px) {
+  .project {
+    width: 50%;
+  }
+}
+@media all and (max-width: 500px) {
+  .project {
+    width: 100%;
+  }
+}
+.project-link {
+  display: block;
+  border-bottom: none;
+  padding: 14px;
+  line-height: 20px;
+  background: #39c;
+  color: #f0f0f0;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}
+.project-image {
+  margin-bottom: 10px;
+  border: 1px solid #3091c2;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  position: relative;
+}
+.project-image:before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+}
+.project-title {
+  font-size: 22px;
+  letter-spacing: 0.025em;
+}
+.project-company {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: rgba(255,255,255,0.75);
+}
+.project-technology {
+  margin: 0;
+}
+.project-technology-item {
+  margin: 0 0.25em 0 0;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+}
+.project-link .project-image {
+  position: relative;
+  text-align: center;
+}
+.project-link .project-image:before {
+  transition: background-color 0.3s ease-out;
+}
+.project-link .project-image:after {
+  content: 'visit site';
+  transition: opacity 0.3s ease-out;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  opacity: 0;
+}
+.project-link:hover,
+.project-link:active,
+.project-link:focus {
+  background: #297aa3;
+}
+.project-link:hover .project-image,
+.project-link:active .project-image,
+.project-link:focus .project-image {
+  border-color: #297aa3;
+  background-color: rgba(0,0,0,0.5);
+}
+.project-link:hover .project-image:before,
+.project-link:active .project-image:before,
+.project-link:focus .project-image:before {
+  background-color: rgba(0,0,0,0.5);
+}
+.project-link:hover .project-image:after,
+.project-link:active .project-image:after,
+.project-link:focus .project-image:after {
+  opacity: 1;
+}
+/* # Blog
+================================================== */
 .link-icon {
   font-size: 14px;
   margin-left: -1.1em;
@@ -483,153 +514,6 @@ ol {
   background: #2c2c2c;
   transform: rotate(180deg);
 }
-/* # Global Header
-================================================== */
-.site-header {
-  font-family: 'Source Sans Pro', sans-serif;
-  background: #fcfcfc;
-  border-bottom: 1px solid #d7d7d7;
-  font-size: 13px;
-  padding: 0.618em 0 0.2em;
-  letter-spacing: 0.01em;
-  font-weight: 600;
-  text-transform: lowercase;
-  margin-bottom: 2em;
-}
-.site-header a {
-  display: inline-block;
-  color: #000;
-  line-height: 120%;
-  border: 0;
-  color: #3c3c3c;
-  text-transform: uppercase;
-}
-.site-header a:hover,
-.site-header a:active,
-.site-header a:focus {
-  color: #39c;
-}
-.site-header .site-logo {
-  display: inline-block;
-}
-.site-header .site-nav {
-  float: right;
-  margin: 0;
-  list-style: none;
-  display: inline-block;
-}
-.site-header .site-nav li {
-  display: inline-block;
-  margin-left: 1.5em;
-}
-/* # Tiles (General)
-================================================== */
-.tile {
-  padding: 14px;
-}
-.tile h2,
-.tile h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.tile:hover,
-.tile:active,
-.tile:focus {
-  border-color: transparent;
-}
-/* # Home
-================================================== */
-#intro {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 3% 0 2% 0;
-  height: auto;
-  min-height: 0;
-  color: #333;
-}
-#intro h1 {
-  font-size: 36px;
-}
-.grid-top {
-  text-align: right;
-  margin-bottom: 5px;
-}
-/* # Work area
-================================================== */
-#work {
-  z-index: 999;
-}
-/* work area tiles */
-.work-content {
-  line-height: 20px;
-  position: relative;
-  background: #39c;
-  color: #f0f0f0;
-  height: 20em;
-  min-height: 20em;
-}
-.work-content .image-wrapper {
-  max-height: 170px;
-  overflow: hidden;
-  margin-bottom: 10px;
-  border: 1px solid #3091c2;
-  position: relative;
-  text-align: center;
-  transition: border-color 0.3s ease-out;
-  perspective: 1000;
-  -webkit-backface-visibility: hidden;
-}
-.work-content .image-wrapper:after {
-  perspective: 1000;
-  -webkit-backface-visibility: hidden;
-  transition: opacity 0.3s ease-out;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: transparent;
-  background: rgba(0,0,0,0.5);
-  content: 'visit site';
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  line-height: 170px;
-  vertical-align: middle;
-  width: 100%;
-  box-sizing: border-box;
-  opacity: 0;
-}
-.work-content:hover,
-.work-content:active,
-.work-content:focus {
-  background: #297aa3;
-}
-.work-content:hover .image-wrapper,
-.work-content:active .image-wrapper,
-.work-content:focus .image-wrapper {
-  border-color: #297aa3;
-}
-.work-content:hover .image-wrapper:after,
-.work-content:active .image-wrapper:after,
-.work-content:focus .image-wrapper:after {
-  opacity: 1;
-}
-.work-content h2 span {
-  display: block;
-  opacity: 0.6;
-  font-size: 14px;
-}
-.work-content .details {
-  opacity: 0.9;
-  font-size: 14px;
-}
-@media all and (max-width: 500px) {
-  .work-content {
-    height: auto;
-    min-height: 0;
-  }
-}
-/* # Blog
-================================================== */
 #tumblr_controls {
   top: auto;
   bottom: 0;
@@ -708,20 +592,12 @@ ol {
   perspective: 1000;
   -webkit-backface-visibility: hidden;
 }
-#intro,
-#work,
-#contact {
-  opacity: 0;
+.waterfall {
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}
+.waterfall.animate {
   animation: fadeIn 1s ease-out 1 forwards;
-}
-#intro {
-  animation-delay: 0.3s;
-}
-#work {
-  animation-delay: 0.6s;
-}
-#contact {
-  animation-delay: 0.9s;
 }
 .slide-in {
   transition: all 0.8s ease-out;

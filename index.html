@@ -3,33 +3,34 @@ layout: default
 title: dustin boersma | front-end web developer
 ---
 
-<div class="site-inner">
-  <div id='intro' class='tile'>
-    <h1>Hello, my name is Dustin and I'm a front-end web developer.</h1>
-  </div>
-  <div id="work">
-    <div class="grid-top">
+<div class="inner-wrapper">
+  <div class="waterfall">
+    <h1 class="intro-blurb">Hello, my name is Dustin and I'm a front-end web developer.</h1>
+    <div class="contact-container">
       {% for contact in site.data.contact %}
-        <a href="{{ contact.url }}" target='_blank'>{{ contact.label }}</a>
+        <a class="contact-link" href="{{ contact.url }}" target='_blank'>{{ contact.label }}</a>
         {% if forloop.last == false %}/{% endif %}
       {% endfor %}
     </div>
-    <div class="container-12">
-      {% for project in site.data.projects %}
-        <a href="{{ project.url }}" target='_blank' class="grid-4 tile work-content">
-          <div class="image-wrapper">
-            <img src="{{ project.image_url }}" alt="{{ projects.title }} screen">
-          </div>
-          <h2><span>{{ project.company_label }}</span>{{ project.title }}</h2>
-          <div class="details">
-            <span>
-            {% for role in project.roles %}
-              {{ role.title }}{% if forloop.last == false %},{% endif %}
-            {% endfor %}
-            </span>
+  </div>
+  <div class="project-container">
+    {% for project in site.data.projects %}
+      <div class="project waterfall">
+        <a class="project-link" href="{{ project.url }}" target="_blank">
+          <div class="project-image" style="background-image: url({{ project.image_url }});"></div>
+          <div class="project-text">
+            <h2 class="project-title">
+              <span class="project-company">{{ project.company_label }}</span>
+              {{ project.title }}
+            </h2>
+            <p class="project-technology">
+              {% for role in project.roles %}
+                <span class="project-technology-item">{{ role.title }}</span>
+              {% endfor %}
+            </p>
           </div>
         </a>
-      {% endfor %}
-    </div>
+      </div>
+    {% endfor %}
   </div>
 </div>

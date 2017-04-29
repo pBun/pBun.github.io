@@ -1,65 +1,49 @@
 @import "_normalize.css.styl";
 @import "_fonts.css.styl";
-@import "_fluid-grid";
+
+$main-font = 'Open Sans', sans-serif;
+$main-color = #333333;
+$accent-color = #145B7F;
+$background-color = darken(rgb(255, 255, 255), 6%);
 
 /* # Global
 ================================================== */
-$main-color = #333333;
-$link-color = #145B7F;
-$tertiary-color = rgb(241, 202, 126);
-$main-font = 'Open Sans', sans-serif;
-$secondary-font = 'Source Sans Pro', sans-serif;
-
-$background-color = darken(rgb(255, 255, 255), 6%);
 
 body {
   font-family: $main-font;
   color: $main-color;
   font-size: 15px;
-  line-height: 150%;
+  line-height: 1.5em;
   background: $background-color;
-  overflow-y: scroll;
-  margin-bottom: 3%;
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 h1, h2, h3, h4 {
   font-weight: normal;
-  line-height: 110%;
+  line-height: 1.1em;
   text-rendering: optimizelegibility;
-  margin: 10px 0;
-  font-weight: 300;
-}
-h1 {
-  @media (max-width: 860px) {
-    font-size: 22.5px;
-  }
-}
-h2 {
-  font-size: 20px;
-}
-h3 {
-  font-size: 20px;
+  margin: 0.33em 0;
 }
 p {
-  margin: 10px 0;
+  margin: 0 0 1em;
 }
-a{
-  color: $link-color;
+a {
+  color: $accent-color;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   word-wrap: break-word;
   transition: all 0.3s ease-out;
   display: inline-block;
-  line-height: 1em;
+  line-height: 1.1em;
   &:hover, &:active, &:focus {
     outline: 0;
     text-decoration: none;
-    border-bottom: 1px solid $link-color;
+    border-bottom-color: $accent-color;
     z-index: 2;
   }
 }
-img {
+.image-wrapper img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
@@ -70,18 +54,175 @@ ul, ol {
   padding: 0;
   margin: 0 0 10px 25px;
 }
-
-.site-container {
+.main {
   padding: 0 0 0 0;
 }
-
-.site-inner {
+.inner-wrapper {
   max-width: 980px;
   margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
+/* # Global Header
+================================================== */
+.site-header {
+  font-family: $main-font;
+  background: #fcfcfc;
+  border-bottom: 1px solid #d7d7d7;
+  font-size: 13px;
+  padding: 0.618em 0 0.2em;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  margin-bottom: 2em;
+  a {
+    display: inline-block;
+    line-height: 1.2em;
+    border: 0;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .site-logo {
+    display: inline-block;
+  }
+  .site-nav {
+    float:  right;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    li {
+      display: inline-block;
+      margin-left: 1.5em;
+    }
+  }
+}
+
+/* # Intro Blurb
+================================================== */
+.intro-blurb {
+  font-size: 32px;
+  padding: 3% 0 2% 0;
+}
+
+/* # Contact Links
+================================================== */
+.contact-container {
+  text-align: right;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* # Project Tiles
+================================================== */
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  margin: 0 -5px;
+}
+.project {
+  box-sizing: border-box;
+  position: relative;
+  width: 33.333%;
+  padding: 0 5px 10px;
+  @media all and (max-width: 900px) {
+    width: 50%;
+  }
+  @media all and (max-width: 500px) {
+    width: 100%;
+  }
+}
+.project-link {
+  display: block;
+  border-bottom: none;
+  padding: 14px;
+  line-height: 20px;
+  background: #39c;
+  color: #f0f0f0;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}
+.project-image {
+  margin-bottom: 10px;
+  border: 1px solid darken(#39c, 5%);
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+  }
+}
+.project-title {
+  font-size: 22px;
+  letter-spacing: 0.025em;
+}
+.project-company {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.75);
+}
+.project-technology {
+  margin: 0;
+}
+.project-technology-item {
+    margin: 0 0.25em 0 0;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+}
+.project-link {
+  .project-image {
+    position: relative;
+    text-align: center;
+    &:before {
+      transition: background-color 0.3s ease-out;
+    }
+    &:after {
+      content: 'visit site';
+      transition: opacity 0.3s ease-out;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;;
+      font-weight: 400;
+      opacity: 0;
+    }
+  } 
+  &:hover, &:active, &:focus {
+    background: darken(#39c, 20%);
+    .project-image {
+      border-color: darken(#39c, 20%);
+      background-color: rgba(0,0,0,0.5);
+      &:before {
+        background-color: rgba(0,0,0,0.5);
+      }
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* # Blog
+================================================== */
 .link-icon {
   font-size: 14px;
   margin-left:-1.1em;
@@ -131,151 +272,6 @@ ul, ol {
   transform: rotate(180deg);
 }
 
-/* # Global Header
-================================================== */
-.site-header {
-  font-family: $secondary-font;
-  background: #fcfcfc;
-  border-bottom: 1px solid #d7d7d7;
-  font-size: 13px;
-  padding: 0.618em 0 0.2em;
-  letter-spacing: 0.01em;
-  font-weight: 600;
-  text-transform: lowercase;
-  margin-bottom: 2em;
-  a {
-    display: inline-block;
-    color: rgb(0, 0, 0);
-    line-height: 120%;
-    border: 0;
-    color: #3c3c3c;
-    text-transform: uppercase;
-    &:hover, &:active, &:focus {
-      color: #39c;
-    }
-  }
-  .site-logo {
-    display: inline-block;
-  }
-  .site-nav {
-    float:  right;
-    margin: 0;
-    list-style: none;
-    display: inline-block;
-    li {
-      display: inline-block;
-      margin-left: 1.5em;
-    }
-  }
-}
-
-/* # Tiles (General)
-================================================== */
-.tile {
-  padding: 14px;
-  h2, h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  &:hover, &:active, &:focus {
-    border-color: transparent;
-  }
-}
-
-/* # Home
-================================================== */
-#intro {
-  font-family: $secondary-font;
-  padding: 3% 0 2% 0;
-  height: auto;
-  min-height: 0;
-  color: $main-color;
-  h1 {
-    font-size: 36px;
-  }
-}
-.grid-top {
-  text-align: right;
-  margin-bottom: 5px;
-}
-
-/* # Work area
-================================================== */
-
-#work {
-  z-index: 999;
-}
-
-/* work area tiles */
-.work-content {
-  line-height: 20px;
-  position: relative;
-  background: #39c;
-  color: #f0f0f0;
-  height: 20em;
-  min-height: 20em;
-  .image-wrapper {
-    max-height: 170px;
-    overflow: hidden;
-    margin-bottom: 10px;
-    border: 1px solid darken(#39c, 5%);
-    position: relative;
-    text-align: center;
-    transition: border-color 0.3s ease-out;
-    perspective: 1000;
-    -webkit-backface-visibility: hidden;
-    &:after {
-      perspective: 1000;
-      -webkit-backface-visibility: hidden;
-      transition: opacity 0.3s ease-out;
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: transparent;
-      background: rgba(0,0,0,0.5);
-      content: 'visit site';
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 400;
-      line-height: 170px;
-      vertical-align: middle;
-      width: 100%;
-      box-sizing: border-box;
-      opacity: 0;
-    }
-  }
-  &:hover, &:active, &:focus {
-    background: darken(#39c, 20%);
-    .image-wrapper {
-      border-color: darken(#39c, 20%);
-      &:after {
-        opacity: 1;
-      }
-    }
-  }
-
-  h2 {
-    span {
-      display: block;
-      opacity: 0.6;
-      font-size: 14px;
-    }
-  }
-}
-.work-content .details {
-  opacity: 0.9;
-  font-size: 14px;
-}
-@media all and (max-width: 500px) {
-  .work-content {
-    height: auto;
-    min-height: 0;
-  }
-}
-
-/* # Blog
-================================================== */
 #tumblr_controls {
   top: auto;
   bottom: 0;
@@ -332,7 +328,7 @@ ul, ol {
       &:hover, &:active, &:focus {
         border-color: transparent;
         color: rgb(255, 255, 255);
-        background: $link-color;
+        background: $accent-color;
       }
     }
   }
@@ -350,19 +346,14 @@ ul, ol {
   perspective: 1000;
   -webkit-backface-visibility: hidden;
 }
-#intro, #work, #contact {
-  opacity: 0;
+.waterfall {
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}
+.waterfall.animate {
   animation: fadeIn 1.0s ease-out 1 forwards;
 }
-#intro {
-  animation-delay: 0.3s;
-}
-#work {
-  animation-delay: 0.6s;
-}
-#contact {
-  animation-delay: 0.9s;
-}
+
 .slide-in {
   transition: all 0.8s ease-out;
   // transform: translate(-100%);
