@@ -248,7 +248,7 @@ body {
   font-size: 15px;
   line-height: 1.5em;
   background: #f0f0f0;
-  font-weight: 400;
+  font-weight: 200;
   letter-spacing: 0.01em;
   overflow-y: scroll;
 }
@@ -260,6 +260,7 @@ h4 {
   line-height: 1.1em;
   text-rendering: optimizelegibility;
   margin: 0.33em 0;
+  font-weight: 200;
 }
 p {
   margin: 0 0 1em;
