@@ -1,9 +1,9 @@
-var gulp     = require('gulp');
-var styles     = require('../config/styles');
-var scripts     = require('../config/scripts');
-var watch    = require('gulp-watch');
+var gulp = require('gulp');
+var stylesConfig = require('../config/styles');
+var scriptsConfig = require('../config/scripts');
 
-gulp.task('watch', function() {
-  watch(styles.watch, function() { gulp.start('styles'); });
-  watch(scripts.src, function() { gulp.start('scripts'); });
+gulp.task('watch', function(done) {
+    gulp.watch(stylesConfig.watch, ['styles']);
+    gulp.watch(scriptsConfig.src, ['scripts']);
+    done();
 });

@@ -1,11 +1,9 @@
 var config = require('./')
 
 module.exports = {
+  watch: config.src + '/styles/**',
+  src: config.src + '/styles/main.styl',
+  dest: config.dest + '/styles',
   autoprefixer: { browsers: ['last 2 version'] },
-  watch: config.sourceDirectory + '/styles/**',
-  src: config.sourceDirectory + '/styles/main.styl',
-  dest: config.publicDirectory + '/styles',
-  settings: {
-
-  }
+  stylus: {}
 }
