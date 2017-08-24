@@ -1,6 +1,6 @@
 - title:     "My Call of Duty"
   company_label:   Activision's
-  url:       https://my.callofduty.com/
+  url:       https://my.callofduty.com/iw/recent?platform=xbl&username=smackmeister
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/my_cod_screen.jpg
   roles:
   - title: HTML
