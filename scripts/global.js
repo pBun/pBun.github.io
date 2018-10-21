@@ -17,7 +17,7 @@
         }, i * 75);
     });
      // project link blur (to avoid weird styling after clicking links)
-    var projectLinks = document.querySelectorAll('.Project__link');
+    var projectLinks = document.querySelectorAll('.Project');
     projectLinks.forEach(function(el, i) {
         el.addEventListener('click', function(e) {
             this.blur();
