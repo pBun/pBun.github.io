@@ -1,62 +1,67 @@
-- title:     "My Call of Duty"
-  company_label:   Activision's
-  url:       https://my.callofduty.com/bo3/stats?platform=psn&username=peebun
-  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/my_cod_screen.jpg
-  roles:
-  - title: HTML
-  - title: CSS
-  - title: JavaScript
-  - title: Vue+Vuex
-- title:     "The Legend of You"
-  company_label:   Activision Destiny's
-  url:       http://projects.dustinboersma.com/dtg-legend
+- title: The Legend of You
+  company_label: "Activision: Destiny's"
+  url: http://projects.dustinboersma.com/dtg-legend
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/dtg_legend_screen.jpg
   roles:
   - title: HTML
   - title: CSS
   - title: JavaScript
-- title:     Battlecast Card Creator
-  company_label:   Activision Skylanders'
-  url:       http://projects.dustinboersma.com/battlecast-card
+- title: Battlecast Card Creator
+  company_label: "Activision: Skylanders'"
+  url: http://projects.dustinboersma.com/battlecast-card
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/battlecast_card_screen.jpg
   roles:
   - title: HTML
   - title: CSS
   - title: JavaScript
-# - title:     Music Drop
-#   company_label:   Left Field Labs'
-#   url:       http://musicdrop.leftfieldlabs.com/
-#   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/musicdrop_screen.jpg
-#   roles:
-#   - title: HTML
-#   - title: CSS
-#   - title: JavaScript
-#   - title: AngularJS
-#   - title: Express
-#   - title: Design
-- title:     Intel for Change
-  company_label:   Participant Media's
-  url:       http://projects.dustinboersma.com/intel-for-change
-  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/intelforchange_screen.jpg
+- title: Echoes of Alterac
+  company_label: "Blizzard: Heroes of the Storm's"
+  url: https://heroesofthestorm.com/en-us/game/events/echoes-of-alterac/
+  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/alterac_screen.png
   roles:
   - title: HTML
   - title: CSS
   - title: JavaScript
-- title:     Google Web Designer
-  company_label:   Google's
-  url:       https://www.google.com/webdesigner/
+- title: Twitch Digits
+  company_label: Personal Project
+  url: http://digits2.twitch.pub/
+  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/twitch_digits_screen.png
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
+- title: My Call of Duty
+  company_label: Activision's
+  url: https://my.callofduty.com/bo3/stats?platform=psn&username=peebun
+  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/my_cod_screen.png
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
+  - title: Vue+Vuex
+# - title: Intel for Change
+#   company_label: Participant Media's
+#   url: http://projects.dustinboersma.com/intel-for-change
+#   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/intelforchange_screen.jpg
+#   roles:
+#   - title: HTML
+#   - title: CSS
+#   - title: JavaScript
+- title: Google Web Designer
+  company_label: Google's
+  url: https://www.google.com/webdesigner/
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/googlewebdesigner_screen.jpg
   roles:
   - title: HTML
   - title: CSS
   - title: JavaScript
-- title:     DP Portfolio
-  company_label:   Patrick Lawler's
-  url:       http://patricklawler.com
-  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/patricklawler_screen.jpg
-  roles:
-  - title: HTML
-  - title: CSS
-  - title: JavaScript
-  - title: Design
-  - title: Jekyll
+# - title: DP Portfolio
+#   company_label: Patrick Lawler's
+#   url: http://patricklawler.com
+#   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/patricklawler_screen.jpg
+#   roles:
+#   - title: HTML
+#   - title: CSS
+#   - title: JavaScript
+#   - title: Design
+#   - title: Jekyll
