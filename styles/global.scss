@@ -1,0 +1,228 @@
+---
+---
+
+/* # Global
+================================================== */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5em;
+  background: #f0f0f0;
+  font-weight: 200;
+  letter-spacing: 0.01em;
+  overflow-y: scroll;
+  text-rendering: optimizelegibility;
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.333em;
+  margin: 0.33em 0;
+  font-weight: 200;
+}
+a {
+  color: #145b7f;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  word-wrap: break-word;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  display: inline-block;
+  line-height: 1.1em;
+}
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
+  text-decoration: none;
+  border-bottom-color: #145b7f;
+  z-index: 2;
+}
+
+/* # Portfolio
+================================================== */
+.Portfolio {
+  padding: 4% 0 0;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* # Intro
+================================================== */
+.Intro__blurb {
+  font-size: 32px;
+  padding: 3% 0 2% 0;
+}
+.Intro__contact {
+  text-align: right;
+}
+.Intro__contact__link {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* # Projects
+================================================== */
+.ProjectList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 50px;
+  margin: 0 -5px;
+}
+.ProjectList__project {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  width: 33.333%;
+  padding: 0 5px 10px;
+}
+@media all and (max-width: 900px) {
+  .ProjectList__project {
+    width: 50%;
+  }
+}
+@media all and (max-width: 500px) {
+  .ProjectList__project {
+    width: 100%;
+  }
+}
+
+/* # Project Tiles
+================================================== */
+.Project {
+  display: block;
+  height: 100%;
+  border-bottom: none;
+  padding: 14px;
+  line-height: 20px;
+  background: #39c;
+  color: #f0f0f0;
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}
+.Project__image {
+  margin-bottom: 10px;
+  border: 1px solid #3091c2;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  position: relative;
+  background-color: #145b7f;
+}
+.Project__image:before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+}
+.Project__title {
+  font-size: 22px;
+  letter-spacing: 0.025em;
+}
+.Project__company {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: rgba(255,255,255,0.75);
+}
+.Project__tagList {
+  margin: 0;
+}
+.Project__tag {
+  margin: 0 0.25em 0 0;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+}
+
+/* # Project Tiles: Interaction
+================================================== */
+.Project__image {
+  position: relative;
+  text-align: center;
+}
+.Project__image:before {
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+.Project__image:after {
+  content: 'visit site';
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  opacity: 0;
+}
+.Project:hover,
+.Project:active,
+.Project:focus {
+  background: #297aa3;
+}
+.Project:hover .Project__image,
+.Project:active .Project__image,
+.Project:focus .Project__image {
+  border-color: #297aa3;
+  background-color: rgba(0,0,0,0.5);
+}
+.Project:hover .Project__image:before,
+.Project:active .Project__image:before,
+.Project:focus .Project__image:before {
+  background-color: rgba(0,0,0,0.5);
+}
+.Project:hover .Project__image:after,
+.Project:active .Project__image:after,
+.Project:focus .Project__image:after {
+  opacity: 1;
+}
+
+/* # Animations
+================================================== */
+.js-waterfall.js-fadeIn {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: fadeIn 1s ease 1 forwards;
+          animation: fadeIn 1s ease 1 forwards;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

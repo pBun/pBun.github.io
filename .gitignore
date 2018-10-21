@@ -1,14 +1,10 @@
-# Ignore hidden folders #
-# This takes care of .tmp, .sass-cache, and many others #
-.*/
-
-# Ignore OS generated files #
+# Ignore OS generated files
 .DS_Store*
 ehthumbs.db
 Icon?
 Thumbs.db
 
-# Always-ignore files and folders #
+# Always-ignore files and folders
 *.diff
 *.err
 *.log
@@ -20,17 +16,10 @@ Thumbs.db
 ._*
 *~
 
-# Ignore packages #
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+# Ruby bundler specific
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/
 
-# Ignore Jekyll/Node dirs #
+# Site specific
 _site
-node_modules
-.tmp

@@ -3,29 +3,29 @@ layout: default
 title: dustin boersma | front-end web developer
 ---
 
-<div class="inner-wrapper">
-  <div class="waterfall">
-    <h1 class="intro-blurb">Hello, my name is Dustin and I'm a front-end web developer.</h1>
-    <div class="contact-container">
+<div class="Portfolio">
+  <div class="Intro js-waterfall">
+    <h1 class="Intro__blurb">Hello, my name is Dustin and I'm a front-end web developer.</h1>
+    <div class="Intro__contact">
       {% for contact in site.data.contact %}
-        <a class="contact-link" href="{{ contact.url }}" target='_blank'>{{ contact.label }}</a>
+        <a class="Intro__contact__link" href="{{ contact.url }}" target='_blank'>{{ contact.label }}</a>
         {% if forloop.last == false %}/{% endif %}
       {% endfor %}
     </div>
   </div>
-  <div class="project-container">
+  <div class="ProjectList">
     {% for project in site.data.projects %}
-      <div class="project waterfall">
-        <a class="project-link" href="{{ project.url }}" target="_blank">
-          <div class="project-image" style="background-image: url({{ project.image_url }});"></div>
-          <div class="project-text">
-            <h2 class="project-title">
-              <span class="project-company">{{ project.company_label }}</span>
+      <div class="ProjectList__project js-waterfall">
+        <a class="Project" href="{{ project.url }}" target="_blank">
+          <div class="Project__image" style="background-image: url({{ project.image_url }});"></div>
+          <div class="Project__text">
+            <h2 class="Project__title">
+              <span class="Project__company">{{ project.company_label }}</span>
               {{ project.title }}
             </h2>
-            <p class="project-technology">
+            <p class="Project__tagList">
               {% for role in project.roles %}
-                <span class="project-technology-item">{{ role.title }}</span>
+                <span class="Project__tag">{{ role.title }}</span>
               {% endfor %}
             </p>
           </div>

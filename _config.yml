@@ -1,12 +1,7 @@
-name: pBun.github.io
-description: dustin boersma | front-end web developer
+title: Dustin Boersma
+description: A front-end web developer based in Los Angeles
 author:
   name: Dustin Boersma
   email: dustin.boersma@gmail.com
-
-exclude: ['_source', 'package.json', 'node_modules', 'gulpfile.js']
-include: ['.htaccess']
-markdown: redcarpet
-highlighter: 'rouge'
-safe: true
-lsi: false
+sass:
+  style: compressed
