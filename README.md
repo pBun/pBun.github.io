@@ -13,7 +13,7 @@ $ gem install bundler
 $ bundle install --path vendor/bundle
 ```
 
-#### Go go go.
+## Go go go.
 
 ```
 $ bundle exec jekyll serve
