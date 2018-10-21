@@ -1,3 +1,20 @@
+- title: Echoes of Alterac
+  company_label: "Blizzard: Heroes of the Storm's"
+  url: https://heroesofthestorm.com/en-us/game/events/echoes-of-alterac/
+  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/alterac_screen.png
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
+- title: My Call of Duty
+  company_label: Activision's
+  url: https://my.callofduty.com/bo3/stats?platform=psn&username=peebun
+  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/my_cod_screen.png
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
+  - title: Vue+Vuex
 - title: The Legend of You
   company_label: "Activision: Destiny's"
   url: http://projects.dustinboersma.com/dtg-legend
@@ -14,14 +31,6 @@
   - title: HTML
   - title: CSS
   - title: JavaScript
-- title: Echoes of Alterac
-  company_label: "Blizzard: Heroes of the Storm's"
-  url: https://heroesofthestorm.com/en-us/game/events/echoes-of-alterac/
-  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/alterac_screen.png
-  roles:
-  - title: HTML
-  - title: CSS
-  - title: JavaScript
 - title: Twitch Digits
   company_label: Personal Project
   url: http://digits2.twitch.pub/
@@ -30,15 +39,6 @@
   - title: HTML
   - title: CSS
   - title: JavaScript
-- title: My Call of Duty
-  company_label: Activision's
-  url: https://my.callofduty.com/bo3/stats?platform=psn&username=peebun
-  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/my_cod_screen.png
-  roles:
-  - title: HTML
-  - title: CSS
-  - title: JavaScript
-  - title: Vue+Vuex
 # - title: Intel for Change
 #   company_label: Participant Media's
 #   url: http://projects.dustinboersma.com/intel-for-change
