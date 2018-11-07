@@ -1,3 +1,11 @@
+- title: Blizzcon 2018
+  company_label: "Blizzard: Heroes of the Storm's"
+  url: https://heroesofthestorm.com/en-us/events/blizzcon-2018/
+  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/blizzcon_2018_screen.jpg
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
 - title: Echoes of Alterac
   company_label: "Blizzard: Heroes of the Storm's"
   url: https://heroesofthestorm.com/en-us/game/events/echoes-of-alterac/
@@ -39,14 +47,6 @@
   - title: HTML
   - title: CSS
   - title: JavaScript
-# - title: Intel for Change
-#   company_label: Participant Media's
-#   url: http://projects.dustinboersma.com/intel-for-change
-#   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/intelforchange_screen.jpg
-#   roles:
-#   - title: HTML
-#   - title: CSS
-#   - title: JavaScript
 - title: Google Web Designer
   company_label: Google's
   url: https://www.google.com/webdesigner/
@@ -55,13 +55,21 @@
   - title: HTML
   - title: CSS
   - title: JavaScript
-# - title: DP Portfolio
-#   company_label: Patrick Lawler's
-#   url: http://patricklawler.com
-#   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/patricklawler_screen.jpg
-#   roles:
-#   - title: HTML
-#   - title: CSS
-#   - title: JavaScript
-#   - title: Design
-#   - title: Jekyll
+- title: Intel for Change
+  company_label: Participant Media's
+  url: http://projects.dustinboersma.com/intel-for-change
+  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/intelforchange_screen.jpg
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
+- title: DP Portfolio
+  company_label: Patrick Lawler's
+  url: http://patricklawler.com
+  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/patricklawler_screen.jpg
+  roles:
+  - title: HTML
+  - title: CSS
+  - title: JavaScript
+  - title: Design
+  - title: Jekyll
