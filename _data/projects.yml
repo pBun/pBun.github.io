@@ -58,7 +58,7 @@
 - title: Intel for Change
   company_label: Participant Media's
   url: http://projects.dustinboersma.com/intel-for-change
-  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/intelforchange_screen.jpg
+  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/intelforchange_screen_500x.jpg
   roles:
   - title: HTML
   - title: CSS
@@ -66,7 +66,7 @@
 - title: DP Portfolio
   company_label: Patrick Lawler's
   url: http://patricklawler.com
-  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/patricklawler_screen.jpg
+  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/patricklawler_screen_500x.jpg
   roles:
   - title: HTML
   - title: CSS
