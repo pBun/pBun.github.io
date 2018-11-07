@@ -14,7 +14,7 @@
         el.style.opacity = 0;
         setTimeout(function() {
             addClass(el, 'js-fadeIn');
-        }, i * 75);
+        }, i * 50);
     });
      // project link blur (to avoid weird styling after clicking links)
     var projectLinks = document.querySelectorAll('.Project');
