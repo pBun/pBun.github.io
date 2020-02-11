@@ -1,14 +1,13 @@
 - title: Overwatch 2
-  company_label: "Blizzard: Overwatch's"
+  company_label: "Blizzard: Overwatch"
   url: https://overwatch2.playoverwatch.com/
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/overwatch_2_screen.png
   roles:
   - title: React
   - title: Next.js
-  - title: HTML
   - title: CSS
 - title: Blizzcon 2018
-  company_label: "Blizzard: Heroes of the Storm's"
+  company_label: "Blizzard: Heroes of the Storm"
   url: https://heroesofthestorm.com/en-us/events/blizzcon-2018/
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/blizzcon_2018_screen.png
   roles:
@@ -16,7 +15,7 @@
   - title: CSS
   - title: JavaScript
 - title: Echoes of Alterac
-  company_label: "Blizzard: Heroes of the Storm's"
+  company_label: "Blizzard: Heroes of the Storm"
   url: https://heroesofthestorm.com/en-us/game/events/echoes-of-alterac/
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/alterac_screen.jpg
   roles:
@@ -24,16 +23,15 @@
   - title: CSS
   - title: JavaScript
 - title: My Call of Duty
-  company_label: Activision's
+  company_label: Activision
   url: https://my.callofduty.com/bo3/stats?platform=psn&username=peebun
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/my_cod_screen.jpg
   roles:
-  - title: HTML
+  - title: Vue
+  - title: Vuex
   - title: CSS
-  - title: JavaScript
-  - title: Vue+Vuex
 - title: The Legend of You
-  company_label: "Activision: Destiny's"
+  company_label: "Activision: Destiny"
   url: http://projects.dustinboersma.com/dtg-legend
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/dtg_legend_screen.jpg
   roles:
@@ -41,7 +39,7 @@
   - title: CSS
   - title: JavaScript
 - title: Battlecast Card Creator
-  company_label: "Activision: Skylanders'"
+  company_label: "Activision: Skylanders"
   url: http://projects.dustinboersma.com/battlecast-card
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/battlecast_card_screen.jpg
   roles:
@@ -57,7 +55,7 @@
   - title: CSS
   - title: JavaScript
 - title: Google Web Designer
-  company_label: Google's
+  company_label: Google
   url: https://www.google.com/webdesigner/
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/googlewebdesigner_screen.jpg
   roles:
@@ -65,7 +63,7 @@
   - title: CSS
   - title: JavaScript
 - title: Intel for Change
-  company_label: Participant Media's
+  company_label: Participant Media
   url: http://projects.dustinboersma.com/intel-for-change
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/intelforchange_screen_500x.jpg
   roles:

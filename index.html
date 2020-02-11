@@ -5,13 +5,14 @@ title: dustin boersma | front-end web developer
 
 <div class="Portfolio">
   <div class="Intro js-waterfall">
+      <div class="ContactList">
+          {% for contact in site.data.contact %}
+            <div class="ContactList__item">
+              <a class="ContactList__link" href="{{ contact.url }}" target='_blank'>{{ contact.label }}</a>
+            </div>
+          {% endfor %}
+      </div>
     <h1 class="Intro__blurb">Hello, my name is Dustin and I'm a front-end web developer.</h1>
-    <div class="Intro__contact">
-      {% for contact in site.data.contact %}
-        <a class="Intro__contact__link" href="{{ contact.url }}" target='_blank'>{{ contact.label }}</a>
-        {% if forloop.last == false %}/{% endif %}
-      {% endfor %}
-    </div>
   </div>
   <div class="ProjectList">
     {% for project in site.data.projects %}
