@@ -1,3 +1,12 @@
+- title: Overwatch 2
+  company_label: "Blizzard: Overwatch's"
+  url: https://overwatch2.playoverwatch.com/
+  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/overwatch_2_screen.png
+  roles:
+  - title: React
+  - title: Next.js
+  - title: HTML
+  - title: CSS
 - title: Blizzcon 2018
   company_label: "Blizzard: Heroes of the Storm's"
   url: https://heroesofthestorm.com/en-us/events/blizzcon-2018/
@@ -63,13 +72,3 @@
   - title: HTML
   - title: CSS
   - title: JavaScript
-- title: DP Portfolio
-  company_label: Patrick Lawler's
-  url: http://patricklawler.com
-  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/patricklawler_screen_500x.jpg
-  roles:
-  - title: HTML
-  - title: CSS
-  - title: JavaScript
-  - title: Design
-  - title: Jekyll
