@@ -11,7 +11,7 @@ body {
   color: #424242;
   font-size: 15px;
   line-height: 1.5em;
-  background: #fff;
+  background-color: #e1e1e1;
   font-weight: 200;
   letter-spacing: 0.01em;
   overflow-y: scroll;
@@ -108,19 +108,13 @@ a:focus {
       flex-wrap: wrap;
   padding-bottom: 50px;
   margin: 0 0 0 -20px;
-  @media all and (max-width: 900px) {
-      margin: 0 0 0 -10px;
-  }
 }
 .ProjectList__project {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
   width: 33.333%;
-  padding: 0 0 40px 20px;
-  @media all and (max-width: 900px) {
-      padding: 0 0 40px 10px;
-  }
+  padding: 0 0 20px 20px;
 }
 @media all and (max-width: 900px) {
   .ProjectList__project {
@@ -146,8 +140,6 @@ a:focus {
   -webkit-backface-visibility: hidden;
 }
 .Project__image {
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
   background-size: cover;
   background-position: top center;
   width: 100%;
@@ -158,6 +150,10 @@ a:focus {
   content: '';
   display: block;
   padding-top: 56.25%;
+}
+.Project__text {
+    padding: 11px 15px 15px;
+    background-color: #fff;
 }
 .Project__title {
   font-size: 22px;
@@ -188,9 +184,6 @@ a:focus {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   line-height: 1em;
-  // background-color: #d8d8d8;
-  // padding: 0.33em 0.5em;
-
   margin: 0 0 0 1em;
   padding: 0 0 0 1em;
   border-left: 1px solid #ccc;
