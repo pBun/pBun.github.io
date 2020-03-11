@@ -6,36 +6,36 @@ layout: default
     <nav class="PrimaryNav">
         <ul class="ContactList">
             <li class="ContactList__item">
-              <a class="ContactList__link ContactList__link--current" href="/">Portfolio</a>
+                <a class="ContactList__link ContactList__link--current" href="/">Portfolio</a>
             </li>
             {% for contact in site.data.contact %}
-              <li class="ContactList__item">
-                <a class="ContactList__link" href="{{ contact.url }}" target="_blank" rel="noopener noreferrer">{{ contact.label }}</a>
-              </li>
+                <li class="ContactList__item">
+                    <a class="ContactList__link" href="{{ contact.url }}" target="_blank" rel="noopener noreferrer">{{ contact.label }}</a>
+                </li>
             {% endfor %}
         </ul>
     </nav>
     <div class="Intro js-waterfall">
         <h1 class="Intro__blurb">Hello, my name is Dustin and I'm a front-end web developer.</h1>
     </div>
-    <div class="ProjectList">
-    {% for project in site.data.projects %}
-        <div class="ProjectList__project js-waterfall">
-            <a class="Project" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
-                <div class="Project__image" style="background-image: url({{ project.image_url }});"></div>
-                <div class="Project__text">
-                    <h2 class="Project__title">
-                      <span class="Project__company">{{ project.company_label }}</span>
-                      {{ project.title }}
-                    </h2>
-                    <ul class="Project__tagList">
-                      {% for role in project.roles %}
-                        <li class="Project__tag">{{ role.title }}</li>
-                      {% endfor %}
-                    </ul>
-                </div>
-            </a>
-        </div>
-    {% endfor %}
-    </div>
+    <ul class="ProjectList" role="list">
+        {% for project in site.data.projects %}
+            <li class="ProjectList__project js-waterfall" role="listitem">
+                <a class="Project" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
+                    <div class="Project__image" style="background-image: url({{ project.image_url }});"></div>
+                    <div class="Project__text">
+                        <h2 class="Project__title">
+                          <span class="Project__company">{{ project.company_label }}</span>
+                          {{ project.title }}
+                        </h2>
+                        <ul class="Project__tagList">
+                          {% for role in project.roles %}
+                            <li class="Project__tag">{{ role.title }}</li>
+                          {% endfor %}
+                        </ul>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
 </div>

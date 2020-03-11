@@ -109,8 +109,9 @@ body {
    -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 50px;
+  padding: 0 0 50px 0;
   margin: 0 0 0 -20px;
+  list-style: none;
 }
 .ProjectList__project {
   -webkit-box-sizing: border-box;
@@ -118,6 +119,7 @@ body {
   position: relative;
   width: 33.333%;
   padding: 0 0 20px 20px;
+  margin: 0;
 }
 @media all and (max-width: 900px) {
   .ProjectList__project {
