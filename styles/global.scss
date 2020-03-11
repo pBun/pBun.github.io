@@ -11,37 +11,10 @@ body {
   color: #424242;
   font-size: 15px;
   line-height: 1.5em;
-  background-color: #e1e1e1;
-  font-weight: 200;
+  background-color: #fefefe;
   letter-spacing: 0.01em;
   overflow-y: scroll;
   text-rendering: optimizelegibility;
-}
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.333em;
-  margin: 0.33em 0;
-  font-weight: 400;
-}
-a {
-  color: #145b7f;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  word-wrap: break-word;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  display: inline-block;
-  line-height: 1.1em;
-}
-a:hover,
-a:active,
-a:focus {
-  outline: 0;
-  text-decoration: none;
-  border-bottom-color: #145b7f;
-  z-index: 2;
 }
 
 /* # Portfolio
@@ -60,8 +33,13 @@ a:focus {
 .Intro__blurb {
   font-size: 32px;
   padding: 5% 0 5% 0;
+  line-height: 1.333em;
+  font-weight: 400;
 }
-.Intro .ContactList {
+
+/* # PrimaryNav
+================================================== */
+.PrimaryNav {
     padding-top: 10px;
 }
 
@@ -71,26 +49,51 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
   font-size: 11px;
-  margin-right: -2em;
+  margin: 0 -2em 0 0;
+  padding: 0;
+  list-style: none;
+  @media all and (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+  }
 }
 .ContactList__item {
-    margin: 0 1em 5px 0;
-    padding: 0.1em 1em 0.1em 0;
-    border-right: 1px solid #ccc;
+    margin: 0 1em 1em 0;
+    padding: 0 1em 0 0;
     line-height: 1em;
+    border-right: 1px solid #ccc;
+    @media all and (max-width: 480px) {
+        border-right: 0;
+    }
 }
 .ContactList__item:last-child {
     border-right: 0;
 }
 .ContactList__link {
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color: #145b7f;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    word-wrap: break-word;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    line-height: 1.1em;
+    &.ContactList__link--current,
+    &:hover,
+    &:active,
+    &:focus {
+        outline: 0;
+        text-decoration: none;
+        border-bottom-color: #145b7f;
+        z-index: 2;
+    }
+}
+.ContactList__link--current {
+    font-weight: 600;
 }
 
 /* # Projects
@@ -131,6 +134,7 @@ a:focus {
 ================================================== */
 .Project {
   display: block;
+  text-decoration: none;
   height: 100%;
   border-bottom: none;
   line-height: 20px;
@@ -138,6 +142,10 @@ a:focus {
   -webkit-perspective: 1000;
           perspective: 1000;
   -webkit-backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow:  10px 10px 30px #d8d8d8,
+               -10px -10px 30px #ffffff;
+  overflow: hidden;
 }
 .Project__image {
   background-size: cover;
@@ -145,6 +153,7 @@ a:focus {
   width: 100%;
   position: relative;
   background-color: #eee;
+  border-bottom: 1px solid #eee;
 }
 .Project__image:before {
   content: '';
@@ -157,29 +166,29 @@ a:focus {
 }
 .Project__title {
   font-size: 22px;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.02em;
   margin: 0;
-  font-weight: 700;
+  font-weight: 600;
+  line-height: 1.1em;
 }
 .Project__company {
   display: block;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.05em;
-  line-height: 1.5em;
+  line-height: 1.333em;
+  font-family: 'Nunito', sans-serif;
 }
 .Project__tagList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0.667em 0 0 -0.667em;
+  margin: 1.333em 0 0 -2em;
   font-size: 11px;
-
-  margin-left: -2em;
+  padding: 0;
 }
 .Project__tag {
   display: block;
-  margin: 0 0 0 0.667em;
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -187,6 +196,7 @@ a:focus {
   margin: 0 0 0 1em;
   padding: 0 0 0 1em;
   border-left: 1px solid #ccc;
+  font-family: 'Nunito', sans-serif;
 }
 .Project__tag:first-child {
     border-left: 0;
@@ -199,34 +209,36 @@ a:focus {
   text-align: center;
 }
 .Project__image:before {
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
+    -webkit-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
 }
 .Project__image:after {
-  content: 'Visit Site';
-  -webkit-transition: opacity 0.2s ease-out;
-  transition: opacity 0.2s ease-out;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
+    content: 'Visit Site';
+    -webkit-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  opacity: 0;
-  color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    opacity: 0;
+    color: #fff;
 }
-.Project:hover .Project__image:before,
-.Project:active .Project__image:before,
-.Project:focus .Project__image:before {
-  background-color: rgba(0,0,0,0.5);
-}
-.Project:hover .Project__image:after,
-.Project:active .Project__image:after,
-.Project:focus .Project__image:after {
-  opacity: 1;
+.Project {
+    &:hover,
+    &:active,
+    &:focus {
+        .Project__image:before {
+            background-color: rgba(0,0,0,0.5);
+        }
+        .Project__image:after {
+            opacity: 1;
+        }
+    }
 }
 
 /* # Animations

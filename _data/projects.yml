@@ -14,7 +14,7 @@
   - title: HTML
   - title: CSS
   - title: JavaScript
-- title: Echoes of Alterac
+- title: "Echoes of Alterac"
   company_label: "Blizzard: Heroes of the Storm"
   url: https://heroesofthestorm.com/en-us/game/events/echoes-of-alterac/
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/alterac_screen.jpg
@@ -22,15 +22,15 @@
   - title: HTML
   - title: CSS
   - title: JavaScript
-- title: My Call of Duty
-  company_label: Activision
+- title: "My Call of Duty"
+  company_label: "Activision: Call of Duty"
   url: https://my.callofduty.com/bo3/stats?platform=psn&username=peebun
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/my_cod_screen.jpg
   roles:
   - title: Vue
   - title: Vuex
   - title: CSS
-- title: The Legend of You
+- title: "The Legend of You"
   company_label: "Activision: Destiny"
   url: http://projects.dustinboersma.com/dtg-legend
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/dtg_legend_screen.jpg
