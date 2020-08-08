@@ -14,6 +14,12 @@
   - title: HTML
   - title: CSS
   - title: JavaScript
+- title: "Hero Select Page"
+  company_label: "Blizzard: Heroes of the Storm"
+  url: https://heroesofthestorm.com/en-us/heroes/
+  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/hgs_hero_select_screen.jpg
+  roles:
+  - title: Accessibility
 - title: "Echoes of Alterac"
   company_label: "Blizzard: Heroes of the Storm"
   url: https://heroesofthestorm.com/en-us/game/events/echoes-of-alterac/
@@ -46,26 +52,18 @@
   - title: HTML
   - title: CSS
   - title: JavaScript
+- title: Dodo Tracker
+  company_label: Personal Project
+  url: https://dodotracker.com
+  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/dodo_tracker_screen.jpg
+  roles:
+    - title: React
+    - title: GatsbyJS
+    - title: CSS
 - title: Twitch Digits
   company_label: Personal Project
   url: http://digits2.twitch.pub/
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/twitch_digits_screen.jpg
-  roles:
-  - title: HTML
-  - title: CSS
-  - title: JavaScript
-- title: Google Web Designer
-  company_label: Google
-  url: https://www.google.com/webdesigner/
-  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/googlewebdesigner_screen.jpg
-  roles:
-  - title: HTML
-  - title: CSS
-  - title: JavaScript
-- title: Intel for Change
-  company_label: Participant Media
-  url: http://projects.dustinboersma.com/intel-for-change
-  image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/intelforchange_screen_500x.jpg
   roles:
   - title: HTML
   - title: CSS
