@@ -63,13 +63,13 @@ a:focus {
   -webkit-overflow-scrolling: touch;
   overflow-y: visible;
 }
-.ContactList::-webkit-scrollbar {
+.touch-disabled .ContactList::-webkit-scrollbar {
   height: 12px;
 }
-.ContactList::-webkit-scrollbar-track {
+.touch-disabled .ContactList::-webkit-scrollbar-track {
   background: transparent;
 }
-.ContactList::-webkit-scrollbar-thumb {
+.touch-disabled .ContactList::-webkit-scrollbar-thumb {
   background-color: #145b7f;
   border-radius: 20px;
   border: 5px solid #fefefe;
