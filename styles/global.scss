@@ -123,17 +123,17 @@ a:focus {
   display: flex;
   font-size: 11px;
   margin: 0;
-  padding: 14px 0 20px;
+  padding: 14px 0 calc(14px + 0.5em);
   list-style: none;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   overflow-y: visible;
 }
 .touch-disabled .ContactList {
-    padding-bottom: 0;
+    padding-bottom: 0.5em;
 }
 .touch-disabled .ContactList::-webkit-scrollbar {
-  height: 29px;
+  height: 21px;
 }
 .touch-disabled .ContactList::-webkit-scrollbar-track {
   background: transparent;
@@ -141,8 +141,8 @@ a:focus {
 .touch-disabled .ContactList::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.5);
   border-color: #3398cc;
-  border-top-width: 14px;
-  border-bottom-width: 14px;
+  border-top-width: 10px;
+  border-bottom-width: 10px;
   border-style: solid;
 }
 .ContactList__item {
