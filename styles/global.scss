@@ -6,18 +6,64 @@
 * {
   box-sizing: border-box;
 }
+html {
+    background-color: #e8e8e8;
+    background-image: linear-gradient(0deg, #efefef 0%, #f0f0f0 100%);
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.01em;
+    font-family: 'Open Sans', sans-serif;
+    color: #424242;
+    text-rendering: optimizelegibility;
+    @media all and (max-width: 900px) {
+        font-size: 12px;
+    }
+}
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #424242;
-  font-size: 15px;
-  line-height: 1.5em;
-  background-color: #fefefe;
-  letter-spacing: 0.01em;
   overflow-y: scroll;
-  text-rendering: optimizelegibility;
+  overflow-x: hidden;
 }
 a:focus {
   outline: 1px dashed currentColor;
+}
+
+/* # Blob BG
+================================================== */
+.site-bg {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.site-bg::after {
+  content: '';
+  display: block;
+  animation: morph 8s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  transition: border-radius 1s ease-in-out;
+  width: 150%;
+  min-width: 900px;
+  height: 60rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3398cc;
+  box-shadow:  10px 10px 30px #d0d0d0,
+               -10px -10px 30px #efefef;
+}
+@keyframes morph {
+  0% {
+      border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+      border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+      border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
 }
 
 /* # Portfolio
@@ -26,28 +72,47 @@ a:focus {
   max-width: 980px;
   margin: 0 auto;
 }
-.ContactList,
 .Intro,
 .ProjectList {
-    padding: 0 20px;
-    @media all and (max-width: 900px) {
-        padding: 0 10px;
-    }
+  padding: 0 20px;
 }
 
 /* # Intro
 ================================================== */
 .Intro__blurb {
-  font-size: 32px;
-  padding: 5% 0 5% 0;
-  line-height: 1.333em;
-  font-weight: 400;
+  font-size: 3rem;
+  padding: 2.5em 0;
+  color: #fff;
+  @media all and (max-width: 900px) {
+      padding: 1em 0 1.5em;
+  }
+}
+.Intro__blurb em {
+  font-weight: 600;
+  font-style: normal;
+}
+.Intro__title {
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin: 0;
+}
+.Intro__subtitle {
+  font-weight: 100;
+  font-size: 0.5em;
+  line-height: 1.45em;
+  margin: 1em 0 0 0;
 }
 
 /* # PrimaryNav
 ================================================== */
 .PrimaryNav {
-    padding-top: 10px;
+    color: #fff;
+    position: relative;
+}
+.PrimaryNav__inner {
+    max-width: 980px;
+    margin: 0 auto;
 }
 
 /* # ContactList
@@ -58,27 +123,39 @@ a:focus {
   display: flex;
   font-size: 11px;
   margin: 0;
+  padding: 14px 0 20px;
   list-style: none;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   overflow-y: visible;
 }
+.touch-disabled .ContactList {
+    padding-bottom: 0;
+}
 .touch-disabled .ContactList::-webkit-scrollbar {
-  height: 12px;
+  height: 29px;
 }
 .touch-disabled .ContactList::-webkit-scrollbar-track {
   background: transparent;
 }
 .touch-disabled .ContactList::-webkit-scrollbar-thumb {
-  background-color: #145b7f;
-  border-radius: 20px;
-  border: 5px solid #fefefe;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: #3398cc;
+  border-top-width: 14px;
+  border-bottom-width: 14px;
+  border-style: solid;
 }
 .ContactList__item {
-    margin: 0 1em 1em 0;
-    padding: 0 1em 0 0;
+    margin: 0 1em 0 0;
+    padding: 0 1em 2px 0;
     line-height: 1em;
     border-right: 1px solid #ccc;
+    &:first-child {
+        padding-left: 20px;
+    }
+    &:last-child {
+        padding-right: calc(20px + 1em);
+    }
 }
 .ContactList__item:last-child {
     border-right: 0;
@@ -88,21 +165,24 @@ a:focus {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-family: 'Nunito', sans-serif;
-    color: #145b7f;
+    color: #fff;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     word-wrap: break-word;
     -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+    transition: border-color 0.2s ease-out;
     line-height: 1.1em;
     &.ContactList__link--current,
     &:hover,
     &:active,
     &:focus {
         text-decoration: none;
-        border-bottom-color: #145b7f;
+        border-bottom-color: #fff;
         z-index: 2;
     }
+}
+a.ContactList__link:focus {
+  outline-offset: 0.5em;
 }
 .ContactList__link--current {
     font-weight: 600;
@@ -157,8 +237,6 @@ a:focus {
           perspective: 1000;
   -webkit-backface-visibility: hidden;
   border-radius: 3px;
-  box-shadow:  10px 10px 30px #d8d8d8,
-               -10px -10px 30px #ffffff;
   overflow: hidden;
 }
 .Project__image {
@@ -260,22 +338,26 @@ a:focus {
 .js-waterfall.js-fadeIn {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-animation: fadeIn 1s ease 1 forwards;
-          animation: fadeIn 1s ease 1 forwards;
+  -webkit-animation: fadeIn 0.5s ease 1 forwards;
+          animation: fadeIn 0.5s ease 1 forwards;
 }
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(-5px);
   }
   to {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(-5px);
   }
   to {
     opacity: 1;
+    transform: translateY(0px);
   }
 }

@@ -1,22 +1,14 @@
 ---
 layout: default
+
 ---
 
 <div class="Portfolio">
-    <nav class="PrimaryNav">
-        <ul class="ContactList">
-            <li class="ContactList__item">
-                <a class="ContactList__link ContactList__link--current" href="/">Portfolio</a>
-            </li>
-            {% for contact in site.data.contact %}
-                <li class="ContactList__item">
-                    <a class="ContactList__link" href="{{ contact.url }}" target="_blank" rel="noopener noreferrer">{{ contact.label }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </nav>
     <div class="Intro js-waterfall">
-        <h1 class="Intro__blurb">Hello, my name is Dustin and I'm a front-end web developer.</h1>
+        <div class="Intro__blurb">
+            <h1 class="Intro__title">Hello, my name is <em>Dustin Boersma</em>.</h1>
+            <h2 class="Intro__subtitle">I'm a <em>web developer</em>, and I specialize in <em>front-end</em> and <em>visual problem solving</em>.</h2>
+        </div>
     </div>
     <ul class="ProjectList" role="list">
         {% for project in site.data.projects %}

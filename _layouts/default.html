@@ -15,7 +15,21 @@
 </head>
 
 <body>
-
+  <div class="site-bg"></div>
+  <nav class="PrimaryNav">
+      <div class="PrimaryNav__inner">
+          <ul class="ContactList">
+              <li class="ContactList__item">
+                  <a class="ContactList__link ContactList__link--current" href="/">Portfolio</a>
+              </li>
+              {% for contact in site.data.contact %}
+                  <li class="ContactList__item">
+                      <a class="ContactList__link" href="{{ contact.url }}" target="_blank" rel="noopener noreferrer">{{ contact.label }}</a>
+                  </li>
+              {% endfor %}
+          </ul>
+      </div>
+  </nav>
   <main class="main">
     {{ content }}
   </main>
