@@ -10,17 +10,17 @@ layout: default
             <h2 class="Intro__subtitle">I'm a <em>web developer</em>, and I specialize in <em>front-end</em> and <em>visual problem solving</em>.</h2>
         </div>
     </div>
-    <ul class="ProjectList" role="list">
+    <ul class="ProjectList" aria-label="Featured projects">
         {% for project in site.data.projects %}
-            <li class="ProjectList__project js-waterfall" role="listitem">
+            <li class="ProjectList__project js-waterfall">
                 <a class="Project" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">
                     <div class="Project__image" style="background-image: url({{ project.image_url }});"></div>
                     <div class="Project__text">
-                        <h2 class="Project__title">
-                          <span class="Project__company">{{ project.company_label }}</span>
-                          {{ project.title }}
-                        </h2>
-                        <ul class="Project__tagList">
+                        <div class="Project__identity">
+                            <h3 class="Project__title">{{ project.title }}</h3>
+                            <span class="Project__company" aria-label="Employer">{{ project.company_label }}</span>
+                        </div>
+                        <ul class="Project__tagList" aria-label="Contributions">
                           {% for role in project.roles %}
                             <li class="Project__tag">{{ role.title }}</li>
                           {% endfor %}

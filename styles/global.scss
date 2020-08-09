@@ -253,31 +253,38 @@ a.ContactList__link:focus {
   padding-top: 56.25%;
 }
 .Project__text {
-    padding: 11px 15px 15px;
+    display: flex;
+    flex-direction: column-reverse;
     background-color: #fff;
+    padding: 0.8em 1em;
+}
+.Project__identity {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
 }
 .Project__title {
   font-size: 22px;
   letter-spacing: 0.02em;
   margin: 0;
-  font-weight: 600;
   line-height: 1.1em;
 }
 .Project__company {
   display: block;
   font-size: 14px;
-  font-weight: 400;
   letter-spacing: 0.05em;
   line-height: 1.333em;
-  font-family: 'Nunito', sans-serif;
+  margin-top: 8px;
+}
+.Project__description {
+    margin: 12px 0 0 0;
 }
 .Project__tagList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1.333em 0 0 -2em;
+  padding: 0 0 10px 0;
   font-size: 11px;
-  padding: 0;
+  margin: 0 0 0 -2em;
 }
 .Project__tag {
   display: block;
