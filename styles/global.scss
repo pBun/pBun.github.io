@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 html {
-    background-color: #f0f0f0;
+    background-color: #f8f8f8;
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.01em;
@@ -50,8 +50,7 @@ a:focus {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  box-shadow:  10px 10px 30px #efefef,
-               -10px -10px 30px #f0f0f0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 @keyframes morph {
   0% {
@@ -237,6 +236,7 @@ a.ContactList__link:focus {
   -webkit-backface-visibility: hidden;
   border-radius: 3px;
   overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .Project__image {
   background-size: cover;
