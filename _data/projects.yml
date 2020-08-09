@@ -11,7 +11,7 @@
   url: https://heroesofthestorm.com/en-us/events/blizzcon-2018/
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/blizzcon_2018_screen.png
   roles:
-  - title: HTML
+  - title: Pug
   - title: CSS
   - title: JavaScript
 - title: "Hero Select Page"
@@ -25,7 +25,7 @@
   url: http://projects.dustinboersma.com/hgs-echoes-of-alterac/
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/alterac_screen.jpg
   roles:
-  - title: HTML
+  - title: Pug
   - title: CSS
   - title: JavaScript
 - title: "My Call of Duty"

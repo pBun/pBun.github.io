@@ -7,13 +7,12 @@
   box-sizing: border-box;
 }
 html {
-    background-color: #e8e8e8;
-    background-image: linear-gradient(0deg, #efefef 0%, #f0f0f0 100%);
+    background-color: #f0f0f0;
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.01em;
     font-family: 'Open Sans', sans-serif;
-    color: #424242;
+    color: #1e1e1e;
     text-rendering: optimizelegibility;
     @media all and (max-width: 900px) {
         font-size: 12px;
@@ -50,9 +49,9 @@ a:focus {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #3398cc;
-  box-shadow:  10px 10px 30px #d0d0d0,
-               -10px -10px 30px #efefef;
+  background-color: #fff;
+  box-shadow:  10px 10px 30px #efefef,
+               -10px -10px 30px #f0f0f0;
 }
 @keyframes morph {
   0% {
@@ -82,7 +81,7 @@ a:focus {
 .Intro__blurb {
   font-size: 3rem;
   padding: 2.5em 0;
-  color: #fff;
+  // color: #fff;
   @media all and (max-width: 900px) {
       padding: 1em 0 1.5em;
   }
@@ -98,6 +97,7 @@ a:focus {
   margin: 0;
 }
 .Intro__subtitle {
+  font-family: 'Nunito', sans-serif;
   font-weight: 100;
   font-size: 0.5em;
   line-height: 1.45em;
@@ -107,7 +107,6 @@ a:focus {
 /* # PrimaryNav
 ================================================== */
 .PrimaryNav {
-    color: #fff;
     position: relative;
 }
 .PrimaryNav__inner {
@@ -140,7 +139,7 @@ a:focus {
 }
 .touch-disabled .ContactList::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.5);
-  border-color: #3398cc;
+  border-color: #fff;
   border-top-width: 10px;
   border-bottom-width: 10px;
   border-style: solid;
@@ -165,7 +164,7 @@ a:focus {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-family: 'Nunito', sans-serif;
-    color: #fff;
+    color: #1e1e1e;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     word-wrap: break-word;
@@ -177,7 +176,7 @@ a:focus {
     &:active,
     &:focus {
         text-decoration: none;
-        border-bottom-color: #fff;
+        border-bottom-color: #1e1e1e;
         z-index: 2;
     }
 }
@@ -232,7 +231,7 @@ a.ContactList__link:focus {
   height: 100%;
   border-bottom: none;
   line-height: 20px;
-  color: #424242;
+  color: #1e1e1e;
   -webkit-perspective: 1000;
           perspective: 1000;
   -webkit-backface-visibility: hidden;
@@ -253,36 +252,35 @@ a.ContactList__link:focus {
   padding-top: 56.25%;
 }
 .Project__text {
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: #fff;
-    padding: 0.8em 1em;
+  background-color: #fff;
+  padding: 0.7em 1em 0.8em;
 }
 .Project__identity {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
+  font-weight: 400;
 }
 .Project__title {
   font-size: 22px;
   letter-spacing: 0.02em;
   margin: 0;
   line-height: 1.1em;
+  font-weight: 700;
+  text-indent: -2px; // hack for font being off slightly
 }
 .Project__company {
+  font-family: 'Nunito', sans-serif;
   display: block;
   font-size: 14px;
   letter-spacing: 0.05em;
   line-height: 1.333em;
   margin-top: 8px;
-}
-.Project__description {
-    margin: 12px 0 0 0;
+  font-weight: 600;
 }
 .Project__tagList {
+  font-family: 'Nunito', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0 10px 0;
+  padding: 10px 0 0 0;
   font-size: 11px;
   margin: 0 0 0 -2em;
 }
