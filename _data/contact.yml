@@ -1,12 +1,12 @@
 - name: resume
   label: Resume
   url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/files/dustinboersma-resume.pdf
-- name: github
-  label: Github
-  url: http://github.com/pBun
 - name: codepen
   label: Codepen
   url: http://codepen.io/pBun
 - name: linkedin
   label: LinkedIn
   url: https://www.linkedin.com/in/dboersma
+- name: github
+  label: Github
+  url: http://github.com/pBun

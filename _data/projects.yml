@@ -65,6 +65,5 @@
   url: http://digits2.twitch.pub/
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/twitch_digits_screen.jpg
   roles:
-  - title: HTML
+  - title: Vue
   - title: CSS
-  - title: JavaScript
