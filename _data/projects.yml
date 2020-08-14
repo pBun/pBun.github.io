@@ -30,7 +30,7 @@
   - title: JavaScript
 - title: "My Call of Duty"
   company_label: "Activision: Call of Duty"
-  url: https://my.callofduty.com/bo3/stats?platform=psn&username=peebun
+  url: https://my.callofduty.com
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/my_cod_screen.jpg
   roles:
   - title: Vue
