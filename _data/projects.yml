@@ -62,7 +62,7 @@
     - title: CSS
 - title: Twitch Digits
   company_label: Personal Project
-  url: http://digits2.twitch.pub/
+  url: http://digits.twitch.pub/
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/twitch_digits_screen.jpg
   roles:
   - title: Vue
