@@ -1,6 +1,6 @@
 - title: Overwatch 2
   company_label: "Blizzard: Overwatch"
-  url: https://overwatch2.playoverwatch.com/
+  url: https://web.archive.org/web/20220120005448/https://overwatch2.playoverwatch.com/en-us/trailer
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/overwatch_2_screen.png
   roles:
   - title: React
@@ -8,7 +8,7 @@
   - title: CSS
 - title: Blizzcon 2018
   company_label: "Blizzard: Heroes of the Storm"
-  url: http://projects.dustinboersma.com/hgs-blizzcon-2018/
+  url: https://web.archive.org/web/20190203025742/https://heroesofthestorm.com/en-us/events/blizzcon-2018/
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/blizzcon_2018_screen.png
   roles:
   - title: Pug
@@ -22,12 +22,20 @@
   - title: Accessibility
 - title: "Echoes of Alterac"
   company_label: "Blizzard: Heroes of the Storm"
-  url: http://projects.dustinboersma.com/hgs-echoes-of-alterac/
+  url: https://web.archive.org/web/20181101121928/https://heroesofthestorm.com/en-us/game/events/echoes-of-alterac/
   image_url: https://s3-us-west-1.amazonaws.com/dustinboersma/portfolio/images/projects/alterac_screen.jpg
   roles:
   - title: Pug
   - title: CSS
   - title: JavaScript
+# - title: "HGC Live Bar"
+#   company_label: "Blizzard: Heroes of the Storm"
+#   url: https://web.archive.org/web/20180725172307/https://heroesofthestorm.com/en-us/
+#   image_url: ''
+#   roles:
+#   - title: React
+#   - title: CSS
+#   - title: JavaScript
 - title: "My Call of Duty"
   company_label: "Activision: Call of Duty"
   url: https://my.callofduty.com
